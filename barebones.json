@@ -1,0 +1,72 @@
+{
+    "path": {
+        "production": "dist/",
+        "development": "dev/",
+        "source": "src/",
+        "font": {
+            "src": "fonts",
+            "dest": "fonts"
+        },
+        "html": {
+            "partials": "partials"
+        },
+        "image": {
+            "src": "images",
+            "dest": "images"
+        },
+        "script": {
+            "src": "scripts",
+            "dest": "scripts",
+            "vendor": "scripts/vendor"
+        },
+        "sprite": {
+            "src": "sprites",
+            "dest": "images"
+        },
+        "icon": {
+            "src": "icons",
+            "dest": "icons"
+        },
+        "style": {
+            "src": "styles",
+            "dest": "styles",
+            "vendor": "styles/vendor"
+        },
+        "misc": {
+            "src": "favicons",
+            "dest": "dist",
+            "files": [
+                "favicon.ico",
+
+                "favicon.png",
+                "favicon-+([0-9])x+([0-9]).png",
+
+                "apple-touch-icon.png",
+                "apple-touch-icon-precomposed.png",
+                "apple-touch-icon-+([0-9])x+([0-9]).png",
+
+                "mstile.png",
+                "mstile-+([0-9])x+([0-9]).png",
+
+                "browserconfig.xml",
+                "crossdomain.xml",
+
+                "robots.txt",
+                "humans.txt"
+            ]
+        }
+    },
+    "server": {
+        "port": 9000
+    },
+    "sprites": {
+        "retina": false
+    },
+    "partials": {
+        "prefix": "<!-- partial:",
+        "suffix": " -->",
+        "context": {
+            "compileJs": false
+        }
+    }
+}
