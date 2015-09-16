@@ -55,3 +55,14 @@ $font-monospace: Consolas, monaco, monospace;
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'DecimaNova';
+  src:url('../fonts/DecimaNovaPro-Italic.eot?#iefix') format('embedded-opentype'),  
+      url('../fonts/DecimaNovaPro-Italic.otf')  format('opentype'),
+      url('../fonts/DecimaNovaPro-Italic.woff') format('woff'), 
+      url('../fonts/DecimaNovaPro-Italic.ttf')  format('truetype'), 
+      url('../fonts/DecimaNovaPro-Italic.svg#DecimaNovaPro-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
