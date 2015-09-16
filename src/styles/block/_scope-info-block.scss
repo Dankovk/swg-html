@@ -1,11 +1,17 @@
 .line{
     position: absolute;
+    top:-50px;
     width: 200%;
     height: 2px;
     background-color: $color-light-grey;
+    z-index: -100;
 }
 .scope-block{
     position: relative;
+    height: 1200px;
+    .layout-container{
+        margin-top: 90px;
+    }
 }
 .right-f{
     transform: rotateZ(-26deg);
@@ -30,4 +36,16 @@
     transform: rotateZ(26deg);
     top: 600px;
     right: -50%;
+}
+.scope-content{
+    color: #000;
+    h1{
+        text-align: left;
+        color: #000;
+    }
+}
+.scope-info-text{
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
 }
