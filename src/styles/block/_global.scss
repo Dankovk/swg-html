@@ -51,7 +51,7 @@
 		top:0;
 		left: -50%;
 		width: 200%;
-		height: 850px;
+		height: 900px;
 		background-color: $blue-bg;
 		transform: rotate(-26deg);
 		.dotted-bg{
@@ -65,7 +65,42 @@
 			transform: rotate(26deg);
 		}
 	}
-
+	.competence-table-block{
+		position: relative;
+		margin-top: 50px;
+		&:before{
+			position: absolute;
+			content: "";
+			display: block;
+			top:-40px;
+			left: 50%;
+    		margin-left: -2px;
+			height: 40px;
+			width: 0;
+			border-right: 1px dashed #fff;
+		}
+		&:after{
+			position: absolute;
+			content: "";
+			display: block;
+			top:300px;
+			left: 50%;
+    		margin-left: -2px;
+			height: 250px;
+			width: 0;
+			border-right: 1px dashed #fff;
+		}
+		.white-line{
+			display: block;
+			position: absolute;
+			width: 30px;
+			height: 1px;
+			background: #fff;
+			top:-40px;
+			left: 50%;
+    		margin-left: -16px;
+		}
+	}
 	.competence-item{
 		float: left;
 		height: 115px;
