@@ -32,3 +32,26 @@
 $font-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-serif: Cambria, Georgia, serif;
 $font-monospace: Consolas, monaco, monospace;
+
+
+@font-face {
+  font-family: 'DecimaNovaPro';
+  src:  url('DecimaNovaPro.eot?#iefix') format('embedded-opentype'),  
+  		url('DecimaNovaPro.otf')  format('opentype'),
+	    url('DecimaNovaPro.woff') format('woff'), 
+	    url('DecimaNovaPro.ttf')  format('truetype'), 
+	    url('DecimaNovaPro.svg#DecimaNovaPro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DecimaNova';
+  src:  url('DecimaNovaPro-Heavy.eot?#iefix') format('embedded-opentype'),  
+  		url('DecimaNovaPro-Heavy.otf')  format('opentype'),
+	    url('DecimaNovaPro-Heavy.woff') format('woff'), 
+	    url('DecimaNovaPro-Heavy.ttf')  format('truetype'), 
+	    url('DecimaNovaPro-Heavy.svg#DecimaNovaPro-Heavy') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
