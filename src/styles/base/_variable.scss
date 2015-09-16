@@ -8,8 +8,8 @@
 
 /* Base typography settings
  */
-$base-color: #555;
-$base-font-family: $font-sans-serif;
+$base-color: #fff;
+$base-font-family: 'DecimaNova';
 $base-font-size: 16px;
 $base-font-style: normal;
 $base-font-weight: normal;
@@ -48,6 +48,13 @@ $button-transition-function: linear;
 /* Layout settings
  */
 $layout-container-width: 940px;
+
+
+/*Colors*/
+$black:#1d252b;
+$blue:#1e71c4;
+$text-blue:#297acc;
+$grey:#425466;
 
 /* Layout grid settings
  *

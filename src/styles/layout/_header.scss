@@ -15,3 +15,55 @@ $layout-header-fixed: false !default;
         height: $layout-header-height;
     }
 }
+
+.layout-header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	.main-logo{
+		position: fixed;
+		top: 30px;
+		left: 50px;
+		.logo-text{
+			display: inline-block;
+			font-size: 16px;
+    		letter-spacing: 1.5px;
+			margin-left: 10px;
+			text-transform: uppercase;
+			vertical-align: top;
+    		line-height: 60px;
+		}
+	}
+	.nav-bar{
+		position: fixed;
+		top:20px;
+		right: 0;
+		left: 0;
+		text-align: center;
+		li {
+			display: inline-block;
+			margin-right: 20px;
+			a{
+				color:#fff;
+				opacity: .35;
+				transition: all .15s linear;
+				&:hover{
+					opacity: 1;
+				}
+				.active{
+					opacity: 1;
+				}
+		    }
+		}
+	}
+	.header-tel{
+		position: fixed;
+		top:30px;
+		right: 50px;
+		font-size: 18px;
+		span{
+			color:$text-blue;
+		}
+	}
+
+}

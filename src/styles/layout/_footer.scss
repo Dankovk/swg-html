@@ -24,7 +24,9 @@ $layout-footer-sticky: false !default;
         min-height: 100%;
         height: auto !important;
         height: 100%;
-        margin-bottom: -$layout-footer-height;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
 
     .layout-content:after {

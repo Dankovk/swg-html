@@ -72,3 +72,75 @@ hr {
     border: 0;
     border-top: 1px solid #ccc;
 }
+ul li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.inlineblock{
+    display: inline-block;
+}
+.block{
+    display: block;
+}
+.floatright{
+    float: right;
+}
+.floatleft{
+    float: left;
+}
+.clearfix{
+    @extend %clearfix;
+}
+.nomargin{
+    margin: 0;
+}
+.nopadding{
+    padding: 0;
+}
+
+.separator10{
+    display: block;
+    width: 100%;
+    height: 10px;
+}
+.separator20{
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+.separator30{
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+.separator40{
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+.separator50{
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+.separator100{
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+.vTop{
+    vertical-align: top;
+}
+.vMiddle{
+    vertical-align:middle; 
+}
+.vBottom{
+    vertical-align: bottom;
+}
+.caps{
+    text-transform: uppercase;
+}
