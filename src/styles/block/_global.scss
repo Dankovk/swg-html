@@ -21,12 +21,18 @@
 		width: 100px;
 		height: 100px;
 		background-color: $blue;
+		transform: rotate(45deg) skewX(45deg);
 		.arrow-down{
+			position: absolute;
+			top:25%;
+			left:0;
+			right: 0;
 			width: 43px;
 			height: 12px;
 			background-image: url(../images/arrow-down.png);
 			background-position: 50% 50%;
 			background-repeat: no-repeat;
+
 		}
 	}
 }
