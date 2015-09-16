@@ -36,13 +36,16 @@ $layout-header-fixed: false !default;
 	}
 	.nav-bar{
 		position: fixed;
-		top:20px;
+		top:15px;
 		right: 0;
 		left: 0;
 		text-align: center;
 		li {
 			display: inline-block;
 			margin-right: 20px;
+			&.active a{
+				opacity: 1;
+			}
 			a{
 				color:#fff;
 				opacity: .35;
@@ -50,17 +53,14 @@ $layout-header-fixed: false !default;
 				&:hover{
 					opacity: 1;
 				}
-				.active{
-					opacity: 1;
-				}
 		    }
 		}
 	}
 	.header-tel{
 		position: fixed;
-		top:30px;
+		top:44px;
 		right: 50px;
-		font-size: 18px;
+		font-size: 16px;
 		span{
 			color:$text-blue;
 		}
