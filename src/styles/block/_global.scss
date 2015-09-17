@@ -114,3 +114,18 @@
 
 	}
 }
+
+.projects{
+	color:$black;
+	padding-top: 500px;
+	h1{
+		text-align: left;
+		margin-bottom: 30px;
+	}
+	.gallery-block{
+		position: absolute;
+		width: 1000px;
+		top:500px;
+		left: 50%;
+	}
+}
