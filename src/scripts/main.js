@@ -17,4 +17,38 @@
     });
 
     console.log('hello');
+    var myShape = "M280 20, L540 145, L280 270, 20 145 Z";
+
+    //Simple path example
+    /*  var myShape = "M424.313,250.873c0,4.393-3.56,7.952-7.952,7.952L21.952,279.5c-4.392,0-7.952-3.56-7.952-7.952l15.904-245.71c0-4.392,3.56-7.952,7.952-7.952L431.47,15.5c4.393,0,7.952,3.56,7.952,7.952L424.313,250.873";*/
+
+    //find all images wanting to be masked (with 'data-mask' attribute)
+    var maskIMGs = $('img[data-mask]');
+
+    maskIMGs.each(function(index){
+      //get IMG attributes
+      var maskPath = $(this).attr('data-mask');
+      var maskSrc = $(this).attr('src');
+      var maskWidth = $(this).attr('width');
+      var maskHeight = $(this).attr('height');
+      var maskAlt = $(this).attr('alt');
+      var maskTitle = $(this).attr('title');
+      var uniqueID = index;
+
+      //build SVG from our IMG attributes & path coords.
+      var maskSVG = $('<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" class="svgMask" width="'+maskWidth+'" height="'+maskHeight+'" viewBox="0 0 '+maskWidth+' '+maskHeight+'" x="'+maskWidth/2+'" y="'+maskHeight/2+'"><defs><clipPath id="maskID'+uniqueID+'"><path d="'+eval(maskPath)+'"/></clipPath>  </defs><title>'+maskTitle+'</title><desc>'+maskAlt+'</desc><image clip-path="url(#maskID'+uniqueID+')" width="'+maskWidth+'" height="'+maskHeight+'" xlink:href="'+maskSrc+'" /></svg>');
+
+      //swap original IMG with SVG
+      $(this).replaceWith(maskSVG);
+      
+      //clean up
+      delete maskSVG;
+    });
+    // $('.svgMask').on('mouseover', function(){
+    //     $(this).css('transform', 'scale(1.1)');
+    // })
+    // $('.svgMask').on('mouseleave', function(){
+    //     $(this).css('transform', 'scale(1)');
+    // })
+
 })(window.jQuery);
