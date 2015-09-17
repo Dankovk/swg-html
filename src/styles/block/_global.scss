@@ -168,10 +168,11 @@
 	}
 }
 
-.svgMask {
-	&:hover{
-	    transform: scale(1.05);
-	    z-index: 99;
-	}
+image {
+	// &:hover{
+	//     transform: scale(1.05);
+	//     z-index: 99;
+	// }
+	overflow: hidden;
     transition: all .15s linear;
 }

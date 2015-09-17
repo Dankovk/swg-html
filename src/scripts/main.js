@@ -44,11 +44,13 @@
       //clean up
       delete maskSVG;
     });
-    // $('.svgMask').on('mouseover', function(){
-    //     $(this).css('transform', 'scale(1.1)');
-    // })
-    // $('.svgMask').on('mouseleave', function(){
-    //     $(this).css('transform', 'scale(1)');
-    // })
+    $('image').on('mouseover', function(){
+        $(this).css({'transform':'translate(-5%, -5%) scale(1.1)', 'z-index':'99'});
+        $(this).parents('.romb').css({'z-index':'99'});
+    })
+    $('image').on('mouseleave', function(){
+        $(this).css({'transform':'translate(0,0) scale(1)', 'z-index':'1'});
+        $(this).parents('.romb').css({'z-index':'1'});
+    })
 
 })(window.jQuery);
