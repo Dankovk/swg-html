@@ -54,4 +54,17 @@
         $(this).parents('.romb, #svgMask').css({'z-index':'1'});
     })
 
+
+
 })(window.jQuery);
+
+
+
+$(document).ready(function() {
+   var n = 1;
+   var interval = setInterval(function(){
+       $('li[data-index="' +n+ '"]').click();
+       n++
+       if (n == 3) n = 0;
+   }, 3000);
+});

@@ -4,6 +4,7 @@
 	font-weight: lighter;
 	color:#fff;
 	height: 100vh;
+	overflow: hidden;
 	.main-logo{
 		position: fixed;
 		top: 30px;
@@ -52,5 +53,70 @@
 }
 
 .main-bg{
-	
+	position: fixed;
+    min-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    -webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.main-bg canvas {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navigation {
+  width: 100%;
+  display: none !important;
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+  list-style: none;
+  z-index: 1;
+}
+
+.navigation li {
+  border: 3px solid #eceff1;
+  width: 18px;
+  height: 18px;
+  margin: 0 5px;
+  background: #52525a;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navigation .active {
+  background: #eceff1;
+}
+
+.cache {
+	display: none;
+}
+
+@media all and (max-width:960px){
+	.placeholder-content .layout-container{
+		width: 90%;
+		.p-main-text{
+			display: block !important;
+			width: 100% !important;
+			margin-bottom: 50px;
+		}
+		.p-contacts{
+			display: block !important;
+			width: 100% !important;
+		}
+	}
+
 }
