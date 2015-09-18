@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'DecimaNovaProLt';
+  src: url('DecimaNovaProLt.eot?#iefix') format('embedded-opentype'),  url('DecimaNovaProLt.otf')  format('opentype'),
+	     url('DecimaNovaProLt.woff') format('woff'), url('DecimaNovaProLt.ttf')  format('truetype'), url('DecimaNovaProLt.svg#DecimaNovaProLt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

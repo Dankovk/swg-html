@@ -1,0 +1,52 @@
+.layout-content.placeholder-content{
+	background: #2a3540;
+	font-style: 'DecimaNova';
+	font-weight: lighter;
+	color:#fff;
+	height: 100vh;
+	.main-logo{
+		position: fixed;
+		top: 30px;
+		left: 50px;
+		.logo-text{
+			display: inline-block;
+			font-size: 12px;
+    		letter-spacing: 1.5px;
+			margin-left: 10px;
+			text-transform: uppercase;
+			vertical-align: top;
+    		line-height: 15px;
+		}
+	}
+.layout-container{
+	display: block;
+	position: absolute;
+	height: auto;
+	@extend %center;
+}
+	.p-content-block{
+		.p-main-text{
+			display: inline-block;
+			width: 74%;
+			font-size: 45px;
+			line-height: 45px;
+			font-weight: lighter;
+			vertical-align: top;
+		}
+		.p-contacts{
+			width: 25%;
+			display: inline-block;
+			font-size: 16px;
+			vertical-align: top;
+			.email{
+				color: #67a6e5;
+				font-weight: normal;
+			}
+		}
+		.under-constraction{
+			opacity: .5;
+			filter: alpha(opacity=50);
+			margin-top: 150px;
+		}
+	}
+}
