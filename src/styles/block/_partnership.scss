@@ -41,6 +41,28 @@
 .guarantees{
   position: relative;
   height: 1000px;
+  h1{
+    display: inline-block;
+    margin-top: 300px;
+  }
+  ul{
+    li{
+      font-size: 25px;
+      position: relative;
+      &:before{
+        content: "";
+        height: 3px;
+        width: 30px;
+        background-color: #1b78d6;
+        display: inline-block;
+        /* vertical-align: middle; */
+        top: 50%;
+        left: -28px;
+        margin-top: -3px;
+        position: absolute;
+      }
+    }
+  }
     .guarantees-bg{
       position: absolute;
       overflow: hidden;
@@ -51,6 +73,7 @@
       background-color: #212c33;
       -webkit-transform: rotate(-26deg);
       transform: rotate(-26deg);
+      z-index: -100;
       .waved-bg{
         width: 100%;
         height: 300%;
@@ -64,4 +87,10 @@
       }
     }
 
+}
+.background-lock{
+  position: absolute;
+  right: 196px;
+  top: 0;
+  z-index: -1;
 }
