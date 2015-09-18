@@ -1,0 +1,62 @@
+.application{
+    height: 800px;
+    background: #212c33;
+  h1{
+    font-size: 90px;
+    display: block;
+    padding-top: 140px;
+    text-align: left;
+  }
+}
+label{
+  position: absolute;
+  display: inline-block;
+
+  font-size: 18px;
+  left: 20px;
+  top: 20.7%;
+  color: #51616d;
+  padding: 5px;
+  transition: top .3s linear;
+}
+input[type="text"]{
+
+  outline: none;
+  border: 1px solid transparent;
+ background: #192126;
+  height: 60px;
+  width: 240px;
+  padding: 25px;
+  font-size: 18px;
+
+}
+.form-group{
+  position: relative;
+}
+.form-control{
+  &:focus{
+    outline: none;
+    border: none;
+    border: 1px solid #607380;
+    background: #212c33;
+
+  }
+}
+.form-control:focus~label{
+  top:-18px;
+  background: #212c33;
+  padding: 5px;
+}
+.half{
+  display: inline-block;
+  margin-right: 20px;
+}
+.full{
+  width: 100%;
+  input[type="text"] {
+    width: 504px;
+  }
+}
+.form-block{
+  margin-top: 50px;
+}
