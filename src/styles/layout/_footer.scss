@@ -29,9 +29,7 @@ $layout-footer-sticky: false !default;
     }
 
     .layout-content:after {
-        content: "";
-        display: block;
-        height: $layout-footer-height;
+
     }
 
     .layout-footer {
