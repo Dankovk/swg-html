@@ -16,7 +16,6 @@
         }
     });
 
-    console.log('hello');
     var myShape = "M280 20, L540 145, L280 270, 20 145 Z";
 
     //Simple path example
