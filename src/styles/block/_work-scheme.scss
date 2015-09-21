@@ -1,7 +1,18 @@
 .work-scheme{
 	color:$black;
-	margin-left: 50%;
 	.scheme-bg1{
-	
+		position: relative;
+		height: 500px;
+		width: 200%;
+		transform: rotate(26deg);
+		border-bottom: 1px dashed $blue;
+		z-index: -120;
+		.scheme-bg-content{
+			background-image: url(../images/lines_2.png);
+			background-position: 25% 100%;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100%;
+		}
 	}
 }
