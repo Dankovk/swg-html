@@ -61,3 +61,51 @@ input[type="text"]{
 .form-block{
   margin-top: 50px;
 }
+.dropzone{
+  height: 60px !important;
+  min-height: 60px;
+  width: 504px;
+  background-color: transparent;
+  border: 1px dashed #607380;
+  position: relative;
+   .dz-preview{
+     position: absolute;
+     top: 0;
+     height: 60px;
+     min-height: 60px;
+     margin: 0;
+   }
+}
+.dz-message{
+  position: absolute;
+  margin: 0 !important;
+  span{
+    color: #607380 ;
+  }
+}
+.dropzone .dz-preview.dz-file-preview .dz-image{
+  background: transparent;
+}
+.dropzone .dz-preview .dz-details .dz-size {
+  position: absolute;
+  left: 200%;
+  display: block;
+  width: 100px;
+  top: 19px;
+}
+.dropzone .dz-preview .dz-details .dz-filename span, .dropzone .dz-preview .dz-details .dz-size span{
+  width: 100px;
+}
+.dropzone .dz-preview .dz-details .dz-filename:not(:hover){
+  position: absolute;
+  top: 19px;
+}
+.dropzone .dz-preview.dz-error .dz-error-message{
+  display: none;
+}
+.dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark{
+  display: none;
+}
+.dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark{
+  display: none;
+}
