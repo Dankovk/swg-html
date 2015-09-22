@@ -51,7 +51,11 @@
         $('.romb').css({'z-index':'2'});
         $(this).css({'transform':'translate(0,0) scale(1)', 'z-index':'0'});
         $(this).parents('.romb, #svgMask').css({'z-index':'1'});
+
     });
+
+
+
 
 
 
@@ -72,6 +76,7 @@ $(document).ready(function() {
    }, 3000);
 
 
+
     new Vivus('my-svg', {type: 'scenario-sync', duration: 10, start: 'autostart', dashGap: 20, forceRender: false});
 );
 
@@ -89,6 +94,9 @@ $(document).ready(function() {
 
 
 
-
-
+   new Vivus('my-svg', {type: 'scenario-sync', duration: 5, start: 'autostart', dashGap: 20, forceRender: false});
 });
+
+
+
+
