@@ -60,10 +60,53 @@
 
 
 $(document).ready(function() {
+    var logo = new Vivus('my-svg',{duration:3000});
+    console.table(logo.map);
    var n = 1;
    var interval = setInterval(function(){
        $('li[data-index="' +n+ '"]').click();
        n++
        if (n == 3) n = 0;
    }, 3000);
+
+    var hi = new Vivus('hi-there', {type: 'scenario-sync', duration: 20, start: 'autostart', dashGap: 20, forceRender: false}
+
+
+
+
+
+    //LAZY LINE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //LAZY LINE END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
