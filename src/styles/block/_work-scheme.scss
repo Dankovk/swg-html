@@ -1,12 +1,27 @@
 .work-scheme{
 	color:$black;
+	position: relative;
+	height: 600px;
+	h1{
+		position: absolute;
+    	top: -135px;
+    	left: 500px;
+	}
 	.scheme-bg1{
-		position: relative;
+		position: absolute;
 		height: 500px;
 		width: 200%;
 		transform: rotate(26deg);
 		border-bottom: 1px dashed $blue;
 		z-index: -120;
+		top: 0;
+    	left: 0;
+    	ul{
+    		position: absolute;
+    		transform:rotate(-26deg);
+    		top: 451px;
+    		left: 170px;
+    	}
 		.scheme-bg-content{
 			background-image: url(../images/lines_2.png);
 			background-position: 25% 100%;
@@ -14,5 +29,47 @@
 			width: 100%;
 			height: 100%;
 		}
+	}
+	.rhombus-item{
+		position: absolute;
+		text-align: center;
+	}
+	.rhombus{
+		background-image: url(../images/rhombus-grey.png);
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		font-size: 25px;
+		font-weight: bold;
+		height: 62px;
+    	width: 120px;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 62px;
+		color:#fff;
+		cursor: pointer;
+		&.focus,
+		&:hover{
+			background-image: url(../images/rhombus-blue.png);
+		}
+	}
+	.rhombus-1{
+		top: 45px;
+    	left: 0px;
+	}
+	.rhombus-2{
+		top: 138px;
+    	left: 190px;
+	}
+	.rhombus-3{
+		top: 226px;
+    	left: 370px;
+	}
+	.rhombus-4{
+		top: 302px;
+    	left: 525px;
+	}
+	.rhombus-5{
+		top: 387px;
+    	left: 700px;
 	}
 }
