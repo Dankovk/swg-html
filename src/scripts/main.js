@@ -69,7 +69,7 @@ $(document).ready(function() {
        if (n == 3) n = 0;
    }, 3000);
 
-    var hi = new Vivus('hi-there', {type: 'scenario-sync', duration: 20, start: 'autostart', dashGap: 20, forceRender: false}
+    new Vivus('my-svg', {type: 'scenario-sync', duration: 5, start: 'autostart', dashGap: 20, forceRender: false});
 
 
 
