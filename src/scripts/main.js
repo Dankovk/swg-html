@@ -62,6 +62,8 @@
 
 
 $(document).ready(function() {
+    var logo = new Vivus('my-svg',{duration:3000});
+    console.table(logo.map);
    var n = 1;
    var interval = setInterval(function(){
        $('li[data-index="' +n+ '"]').click();
@@ -70,3 +72,20 @@ $(document).ready(function() {
    }, 3000);
 });
 
+
+    new Vivus('my-svg', {type: 'scenario-sync', duration: 5, start: 'autostart', dashGap: 20, forceRender: false});
+
+
+
+
+
+    //LAZY LINE
+
+
+    //LAZY LINE END
+
+
+
+
+
+});
