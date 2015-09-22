@@ -66,7 +66,7 @@ $(document).ready(function() {
        if (n == 3) n = 0;
    }, 3000);
 
-   var logo = new Vivus('build_1', {type: 'scenario-sync', duration: 5, start: 'autostart', dashGap: 20, forceRender: false});
+   var build1 = new Vivus('build_1', {type: 'scenario-sync', duration: 5, start: 'autostart', dashGap: 20, forceRender: false});
 });
 
 
