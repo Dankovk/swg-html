@@ -47,6 +47,9 @@
         padding-left: 60px;
     }
 }
+.scope-info-block{
+    @extend %clearfix;
+}
 .scope-info-text{
     display: inline-block;
     width: 400px;

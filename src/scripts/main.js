@@ -52,10 +52,7 @@
         $(this).css({'transform':'translate(0,0) scale(1)', 'z-index':'0'});
         $(this).parents('.romb, #svgMask').css({'z-index':'1'});
     })
-
-
-    new Vivus('build_2', {type: 'scenario-sync', duration: 7, start: 'autostart', dashGap: 2, forceRender: false}, console.log('ok'));
-
+    
 
 })(window.jQuery);
 
@@ -70,22 +67,10 @@ $(document).ready(function() {
        n++
        if (n == 3) n = 0;
    }, 3000);
+
+   new Vivus('my-svg', {type: 'scenario-sync', duration: 5, start: 'autostart', dashGap: 20, forceRender: false});
 });
 
 
-    new Vivus('my-svg', {type: 'scenario-sync', duration: 5, start: 'autostart', dashGap: 20, forceRender: false});
 
 
-
-
-
-    //LAZY LINE
-
-
-    //LAZY LINE END
-
-
-
-
-
-});
