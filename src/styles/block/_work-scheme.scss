@@ -1,38 +1,52 @@
 .work-scheme{
 	color:$black;
 	position: relative;
-	height: 600px;
+	height: 700px;
+	width: 100%;
+
 	h1{
-		position: absolute;
-    	top: -135px;
-    	left: 500px;
+		position: relative;
+		right: -235px;
+    	top: -35px;
 	}
-	.scheme-bg1{
-		position: absolute;
-		height: 500px;
-		width: 200%;
-		transform: rotate(26deg);
-		border-bottom: 1px dashed $blue;
-		z-index: -120;
-		top: 0;
-    	left: 0;
-    	ul{
+
+	ul.rhombus-block{
     		position: absolute;
-    		transform:rotate(-26deg);
-    		top: 451px;
-    		left: 170px;
+		    left: 0;
+		    margin: 0 auto;
+		    right: 0;
+		    text-align: center;
+		    top: 100px;
+		    width: 900px;
+		    height: 100%;
     	}
 		.scheme-bg-content{
+			position: absolute;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
 			background-image: url(../images/lines_2.png);
-			background-position: 25% 100%;
+			background-position: 50% 100%;
 			background-repeat: no-repeat;
-			width: 100%;
-			height: 100%;
+			width: 480px;
+    		height: 310px;
+    		margin: 0 auto;
 		}
+	.dashed-blue-line{
+		position: absolute;
+		display: block;
+		transform: rotate(26deg);
+		width: 200%;
+		height: 0px;
+		top: 50%;
+    	left: -50%;
+    	z-index: -110;
+		border-bottom: 1px dashed $blue;
 	}
 	.rhombus-item{
 		position: absolute;
 		text-align: center;
+		line-height: 18px;
 	}
 	.rhombus{
 		background-image: url(../images/rhombus-grey.png);
@@ -47,29 +61,33 @@
 		line-height: 62px;
 		color:#fff;
 		cursor: pointer;
+		transform: rotate(-1deg);
 		&.focus,
 		&:hover{
 			background-image: url(../images/rhombus-blue.png);
 		}
 	}
 	.rhombus-1{
-		top: 45px;
+		top: 49px;
     	left: 0px;
 	}
 	.rhombus-2{
-		top: 138px;
+		top: 141px;
     	left: 190px;
 	}
 	.rhombus-3{
-		top: 226px;
-    	left: 370px;
+		top: 236px;
+    	left: 385px;
 	}
 	.rhombus-4{
-		top: 302px;
-    	left: 525px;
+		top: 334px;
+    	left: 585px;
+    	p{
+    		margin-left: -15px;
+    	}
 	}
 	.rhombus-5{
-		top: 387px;
-    	left: 700px;
+		top: 427px;
+    	left: 775px
 	}
 }

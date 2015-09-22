@@ -54,6 +54,8 @@
     })
 
 
+    new Vivus('build_2', {type: 'scenario-sync', duration: 7, start: 'autostart', dashGap: 2, forceRender: false}, console.log('ok'));
+
 
 })(window.jQuery);
 
@@ -67,3 +69,4 @@ $(document).ready(function() {
        if (n == 3) n = 0;
    }, 3000);
 });
+
