@@ -75,9 +75,7 @@ $(document).ready(function() {
        if (n == 3) n = 0;
    }, 3000);
 
-
-
-    new Vivus('my-svg', {type: 'scenario-sync', duration: 10, start: 'autostart', dashGap: 20, forceRender: false});
+    new Vivus('my-svg', {type: 'scenario-sync', duration: 10, start: 'autostart', dashGap: 20, forceRender: false})
 );
 
 
