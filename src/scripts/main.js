@@ -66,33 +66,43 @@
 
 
 $(document).ready(function() {
-   var n = 1;
-   var interval = setInterval(function(){
-       $('li[data-index="' +n+ '"]').click();
-       n++
-       if (n == 3) n = 0;
-   }, 3000);
-
-
-);
+    var n = 1;
+    var interval = setInterval(function () {
+        $('li[data-index="' + n + '"]').click();
+        n++
+        if (n == 3) n = 0;
+    }, 3000);
 
 
 
 
 
 
+    obt2 = new Vivus('build_1', {type: 'oneByOne', duration: 150, start: "manual"});
+    $('.layout-content').on('scroll',function(){
+
+        if($('.svg-cont').is(':in-viewport')){
+        obt2.play(1);
+
+        }
+    });
+
+});
 
 
-    //LAZY LINE
+
+if($('.scope-content').is(':in-viewport')){
 
 
-    //LAZY LINE END
+}
 
 
 
-   new Vivus('my-svg', {type: 'scenario-sync', duration: 5, start: 'autostart', dashGap: 20, forceRender: false});
 
-   var build1 = new Vivus('build_1', {type: 'scenario-sync', duration: 5, start: 'autostart', dashGap: 20, forceRender: false});
+
+
+
+
 
 
 
