@@ -91,10 +91,6 @@ $(document).ready(function() {
 
 
 
-if($('.scope-content').is(':in-viewport')){
-
-
-}
 
 
 
