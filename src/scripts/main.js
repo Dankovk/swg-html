@@ -56,8 +56,15 @@
         $('.romb').css({'z-index':'2'});
         $(this).css({'transform':'translate(0,0) scale(1)', 'z-index':'0'});
         $(this).parents('.romb, #svgMask').css({'z-index':'1'});
-    })
-    
+
+    });
+
+
+
+
+
+
+
 
 })(window.jQuery);
 
@@ -71,11 +78,23 @@ $(document).ready(function() {
        if (n == 3) n = 0;
    }, 3000);
 
+    obt1 = new Vivus('build_1', {type: 'oneByOne', delay:100, duration: 250, start: "manual"});
+    obt2 = new Vivus('build_2', {type: 'oneByOne', delay:100, duration: 250, start: "manual"});
+    obt3 = new Vivus('build_3', {type: 'oneByOne', delay:100, duration: 250, start: "manual"});
+
+    function startDraw(dom, obt){
+        if($(''+dom+'').is(':in-viewport')){
+            obt.play(1);
+        }
+        
+    }
+
+    $('.layout-content').on('scroll',function(){
+        startDraw('#build_1', obt1);
+        startDraw('#build_2', obt2);
+        startDraw('#build_3', obt3);
+        
+    });
+
 });
 
-
-
-
-
-   var build1 = new Vivus('build_1', {type: 'scenario-sync', duration: 3, start: 'autostart', dashGap: 20, forceRender: false});
-   // $("svg:in-viewport").play(1);
