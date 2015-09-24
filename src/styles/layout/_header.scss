@@ -21,10 +21,14 @@ $layout-header-fixed: false !default;
 	top: 0;
 	left: 0;
 	z-index: 50;
+
 	.main-logo{
 		position: fixed;
 		top: 30px;
 		left: 50px;
+		transition: all .15s linear;
+		text-decoration: none;
+		color: #fff;
 		.logo-text{
 			display: inline-block;
 			font-size: 16px;
@@ -41,6 +45,7 @@ $layout-header-fixed: false !default;
 		right: 0;
 		left: 0;
 		text-align: center;
+		transition: all .25s linear;
 		li {
 			display: inline-block;
 			margin-right: 30px;
@@ -50,7 +55,7 @@ $layout-header-fixed: false !default;
 			a{
 				color:#fff;
 				opacity: .35;
-				transition: all .15s linear;
+				transition: all .25s linear;
 				&:hover{
 					opacity: 1;
 				}
@@ -62,9 +67,42 @@ $layout-header-fixed: false !default;
 		top:44px;
 		right: 50px;
 		font-size: 16px;
+		transition: all .25s linear;
 		span{
 			color:$text-blue;
 		}
 	}
+	.top-header-bg{
+		opacity: 0;
+		height: 0;
+		transition: all .15s linear;
+	}
+}
 
+
+
+.layout-header.black-head{
+	height: 80px;
+	.main-logo{
+		top: 13px;
+	}
+	.nav-bar{
+		top:0;
+	}
+	.header-tel{
+		top:30px;
+	}
+
+	.top-header-bg{
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #1d242c;
+		opacity: .5;
+		transition: all .15s linear;
+	}
 }

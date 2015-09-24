@@ -48,22 +48,20 @@
       //clean up
       delete maskSVG;
     });
-    $('image').on('mouseover', function(){
-        $(this).css({'transform':'translate(-5%, -5%) scale(1.1)', 'z-index':'99'});
-        $(this).parents('.romb, #svgMask').css({'z-index':'99'});
-    })
-    $('image').on('mouseleave', function(){
-        $('.romb').css({'z-index':'2'});
-        $(this).css({'transform':'translate(0,0) scale(1)', 'z-index':'0'});
-        $(this).parents('.romb, #svgMask').css({'z-index':'1'});
 
-    });
+  
 
+  
+    // $('image').on('mouseover', function(){
+    //   $(this).css({'transform':'translate(-5%, -5%) scale(1.1)', '-webkit-transform':'translate(-5%, -5%) scale(1.1)', '-moz-transform':'translate(-5%, -5%) scale(1.1)', '-ms-transform':'translate(-5%, -5%) scale(1.1)', '-o-transform':'translate(-5%, -5%) scale(1.1)', 'z-index':'99'});
+    //   $(this).parents('.romb, #svgMask').css({'z-index':'99'});
+    // })
+    // $('image').on('mouseleave', function(){
+    //     $('.romb,#svgMask').css({'z-index':'2'});
+    //     $(this).css({'transform':'translate(0, 0) scale(1.1)', '-webkit-transform':'translate(0, 0) scale(1)', '-moz-transform':'translate(0, 0) scale(1)', '-ms-transform':'translate(0, 0) scale(1)', '-o-transform':'translate(0, 0) scale(1)', 'z-index':'0'});
+    //     $(this).parents('.romb, #svgMask').css({'z-index':'1'});
 
-
-
-
-
+    // });
 
 
 })(window.jQuery);
@@ -78,23 +76,58 @@ $(document).ready(function() {
        if (n == 3) n = 0;
    }, 3000);
 
-    obt1 = new Vivus('build_1', {type: 'oneByOne', delay:100, duration: 250, start: "manual"});
-    obt2 = new Vivus('build_2', {type: 'oneByOne', delay:100, duration: 250, start: "manual"});
-    obt3 = new Vivus('build_3', {type: 'oneByOne', delay:100, duration: 250, start: "manual"});
+    obt1 = new Vivus('build_1', {type: 'oneByOne', delay:100, duration: 200, start: "inViewport"});
+    obt2 = new Vivus('build_2', {type: 'oneByOne', delay:100, duration: 150, start: "inViewport"});
+    obt3 = new Vivus('build_3', {type: 'oneByOne', delay:100, duration: 150, start: "inViewport"});
+    obt4 = new Vivus('castle_1', {type: 'oneByOne', delay:100, duration: 150, start: "inViewport"});
 
-    function startDraw(dom, obt){
-        if($(''+dom+'').is(':in-viewport')){
-            obt.play(1);
-        }
+    // inViewPort function for each svg element
+    //
+    // function startDraw(dom, obt){
+    //     if($(''+dom+'').is(':in-viewport()')){
+    //         obt.play(1);
+    //     }
         
-    }
+    // }
 
-    $('.layout-content').on('scroll',function(){
-        startDraw('#build_1', obt1);
-        startDraw('#build_2', obt2);
-        startDraw('#build_3', obt3);
+    // $('.layout-content').on('scroll',function(){
+    //     startDraw('#build_1', obt1);
+    //     startDraw('#build_2', obt2);
+    //     startDraw('#build_3', obt3);
         
-    });
+    // });
+
+    checkHeader();
+
+    
+    var wow = new WOW(
+      {
+        boxClass:     'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset:       0,          // distance to the element when triggering the animation (default is 0)
+        mobile:       true,       // trigger animations on mobile devices (default is true)
+        live:         true,       // act on asynchronously loaded content (default is true)
+        callback:     function(box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      }
+    );
+    wow.init();
 
 });
 
+//check window Offset to change header style
+var checkHeader = function(){
+     if(window.pageYOffset > window.screen.height - 200) {
+          $('.layout-header').addClass('black-head');
+     }
+     else {
+          $('.layout-header').removeClass('black-head');
+     }
+ };
+
+$(document).on('scroll', function(){
+    checkHeader();
+});

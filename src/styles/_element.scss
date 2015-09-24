@@ -37,6 +37,9 @@ html {
         box-sizing: inherit;
     }
 }
+html, body{
+    min-width: 100%;
+}
 
 ::selection {
     color: #fff;
