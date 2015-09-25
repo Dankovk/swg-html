@@ -52,16 +52,16 @@
   
 
   
-    // $('image').on('mouseover', function(){
-    //   $(this).css({'transform':'translate(-5%, -5%) scale(1.1)', '-webkit-transform':'translate(-5%, -5%) scale(1.1)', '-moz-transform':'translate(-5%, -5%) scale(1.1)', '-ms-transform':'translate(-5%, -5%) scale(1.1)', '-o-transform':'translate(-5%, -5%) scale(1.1)', 'z-index':'99'});
-    //   $(this).parents('.romb, #svgMask').css({'z-index':'99'});
-    // })
-    // $('image').on('mouseleave', function(){
-    //     $('.romb,#svgMask').css({'z-index':'2'});
-    //     $(this).css({'transform':'translate(0, 0) scale(1.1)', '-webkit-transform':'translate(0, 0) scale(1)', '-moz-transform':'translate(0, 0) scale(1)', '-ms-transform':'translate(0, 0) scale(1)', '-o-transform':'translate(0, 0) scale(1)', 'z-index':'0'});
-    //     $(this).parents('.romb, #svgMask').css({'z-index':'1'});
+    $('image').on('mouseover', function(){
+      $(this).css({'transform':'translate(-5%, -5%) scale(1.1)', '-webkit-transform':'translate(-5%, -5%) scale(1.1)', '-moz-transform':'translate(-5%, -5%) scale(1.1)', '-ms-transform':'translate(-5%, -5%) scale(1.1)', '-o-transform':'translate(-5%, -5%) scale(1.1)', 'z-index':'99'});
+      $(this).parents('.romb, #svgMask').css({'z-index':'99'});
+    })
+    $('image').on('mouseleave', function(){
+        $('.romb,#svgMask').css({'z-index':'2'});
+        $(this).css({'transform':'translate(0, 0) scale(1.1)', '-webkit-transform':'translate(0, 0) scale(1)', '-moz-transform':'translate(0, 0) scale(1)', '-ms-transform':'translate(0, 0) scale(1)', '-o-transform':'translate(0, 0) scale(1)', 'z-index':'0'});
+        $(this).parents('.romb, #svgMask').css({'z-index':'1'});
 
-    // });
+    });
 
 
 })(window.jQuery);
@@ -99,7 +99,6 @@ $(document).ready(function() {
 
     checkHeader();
 
-    
     var wow = new WOW(
       {
         boxClass:     'wow',      // animated element css class (default is wow)

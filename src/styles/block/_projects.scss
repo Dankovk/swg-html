@@ -8,25 +8,108 @@
 	}
 	.gallery-block{
 		position: absolute;
-		height: 600px;
+		height: auto;
 		width: 1000px;
-		top:100px;
+		top:0;
 		left: 0;
-		.romb{
+		.rhomb-wrapper{
 			display: block;
 			position: absolute;
+			overflow: hidden;
+			width: 280px;
+			height: 280px;
+			transform: rotate(135deg) skew(20deg, 20deg);
+			cursor: pointer;
+			&:after{
+				content:'';
+				display: block;
+				position: absolute;
+				top:0;
+				left:0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				background-color: #000;
+				transition:all .25s linear;
+			}
+			&:before{
+				content:'';
+				display: block;
+				position: absolute;
+				width: 35%;
+			    height: 35%;
+			    right: 65%;
+			    bottom: 65%;
+				background-color: $blue;
+				color:#fff;
+				z-index: 1;
+				opacity: 0;
+				transition:opacity .25s linear;
+			}
+			&:hover{
+				&:after{
+					opacity: .5;
+				}
+				&:before{
+					opacity: 1;
+				}
+			}
+
+		} 
+		.rhomb-inner{
+			width: 230%;
+		    height: 120%;
+		    position: absolute;
+		    top: -5%;
+		    background-size: cover;
+		    right: -60%;
+    		background-position: 50% 50%;
+    		background-repeat: no-repeat;
+    		transform:  skew(-20deg, -20deg) rotate(-135deg);
 		}
-		.romb-1{
-			top:153px;
-			left: 0;
+
+		.rhomb-wrapper:nth-of-type(1){
+			top: 270px;
+    		left: 153px;
 		}
-		.romb-2{
-			top: 15px;
-    		left: 275px;
+		.rhomb-wrapper:nth-of-type(2){			
+			top: 135px;
+    		left: 438px;
 		}
-		.romb-3{
-			top: 290px;
-    		left: 275px;
+		.rhomb-wrapper:nth-of-type(3){
+			top: 406px;
+    		left: 437px;
+		}
+		.rhomb-wrapper:nth-of-type(4){			
+			top: 0px;
+    		left: 720px;
+		}
+		.rhomb-wrapper:nth-of-type(5){			
+			top: 270px;
+    		left: 720px;
+		}
+		.rhomb-wrapper:nth-of-type(6){
+			top: 543px;
+    		left: 720px;
+		}
+
+		.rhomb-1{
+			background-image: url(../images/project-1.jpg);
+		}
+		.rhomb-2{
+			background-image: url(../images/project-2.jpg);
+		}
+		.rhomb-3{
+    		background-image: url(../images/project-3.jpg);
+		}
+		.rhomb-4{
+			background-image: url(../images/project-1.jpg);
+		}
+		.rhomb-5{
+			background-image: url(../images/project-2.jpg);
+		}
+		.rhomb-6{
+    		background-image: url(../images/project-3.jpg);
 		}
 	}
 
