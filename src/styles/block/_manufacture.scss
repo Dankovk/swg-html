@@ -1,0 +1,51 @@
+.specialization-block{
+  display: inline-block;
+  width: 24%;
+  height: 162px;
+  vertical-align: top;
+}
+.scope-content {
+
+  .padding-less {
+    padding: 0;
+    padding-left: 0;
+  }
+}
+.specialization-cont{
+  margin-top: 50px;
+}
+.svg-block{
+  height: 70px;
+  width: 70px;
+  background: red;
+  transition: all 10s ease-in-out;
+
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  &:hover{
+    transform: rotateZ(14400deg) scale(5) skew(55deg, 55deg) ;
+    -webkit-filter: hue-rotate(180deg);
+    background: darkturquoise;
+  }
+}
+.text-block{
+  margin-top: 20px;
+  span{
+    text-transform: uppercase;
+    color: #297acc;
+    font-weight: bold;
+  }
+}
+.equipment-bg{
+  position: absolute;
+  background-color: blue;
+  width: 1000px;
+  height: 1000px;
+  left: 0;
+  transform: rotate(135deg) skew(20deg, 20deg);
+  transition: all 3s infinite;
+  animation:   5s infinite;
+
+ 
+}
