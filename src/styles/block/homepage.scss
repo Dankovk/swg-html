@@ -1,0 +1,166 @@
+.homepage-content{
+  .svg-cont{
+    position: absolute;
+    right: -64px;
+    top: 259px;
+    width: 500px;
+  }
+  .text-block{
+    text-align: left;
+  span{
+    color: #000;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: none;
+  }
+  }
+}
+.homepage-scope{
+  height: 1000px;
+}
+.more-btn{
+  display: block;
+  border: none;
+  background-color: #1b78d6;
+  width: 145px;
+  height: 45px;
+  color: #fff;
+  margin-top: 20px;
+  transition: all .3s linear;
+  &:hover{
+    background-color: #1b78d6+20% ;
+  }
+
+}
+section{
+  position: relative;
+}
+.montage-section{
+  h1{
+    z-index: 111;
+    color: #fff;
+  }
+  svg{
+    line,path,polygon,polyline{
+      stroke: #000 !important;
+    }
+  }
+  .svg-cont{
+    position: absolute;
+    top: -550px;
+    z-index: 1000;
+    width: 500px;
+    left: -120px;
+  }
+  .text-block{
+    text-align: left;
+    position: absolute;
+    z-index: 111;
+    top: -400px;
+    right: -90px;
+    span{
+      color: #fff;
+    }
+  .more-btn{
+    background-color: #1d252b;
+    &:hover{
+      background-color: #1d252b+20%;
+    }
+  }
+  }
+}
+.montage-bg{
+  position: absolute;
+  width: 200%;
+  top:-716px;
+  margin-top: -100px;
+  height: 1000px;
+  left: -50%;
+  overflow: hidden;
+  -webkit-transform: rotateZ(-26deg);
+  transform: rotateZ(-26deg);
+  background-color: #1b78d6;
+  .dotted-bg{
+    width: 200%;
+    height: 500%;
+    top: -100%;
+    position: absolute;
+    background-image: url(../images/dot.png);
+    background-position: 50% 50%;
+    background-repeat: 10px;
+    -webkit-transform: rotate(26deg);
+    transform: rotate(26deg);
+
+  }
+}
+.manufacturing-section{
+margin-top: -150px;
+h1{
+position: absolute;
+z-index: 100;
+top: 129px;
+left: -14px;
+}
+.text-block{
+position: absolute;
+z-index: 100;
+top: 340px;
+text-align: left;
+
+span{
+color: #fff;
+  text-transform: none;
+  font-size: 18px;
+}
+}
+
+.svg-cont {
+position: absolute;
+z-index: 100;
+right: 0;
+top: 230px;
+}
+}
+.manufacturing-section-bg{
+position: relative;
+width: 200%;
+height: 1890px;
+left: -50%;
+overflow: hidden;
+-webkit-transform: rotateZ(26deg);
+transform: rotateZ(26deg);
+background-color: #1d252b;
+.workers-bg-manuf{
+background-image: url("../images/manufactoring-bg.jpg");
+position: absolute;
+height: 152%;
+background-size: cover;
+width: 100%;
+background-repeat: no-repeat;
+top: -50%;
+left: -20%;
+opacity: .4;
+-webkit-transform: rotateZ(-26deg);
+transform: rotateZ(-26deg);
+}
+}
+.montage-header-relative{
+  position: relative;
+  top: -555px;
+  text-align: right;
+  right: -75px;
+
+}
+.mask-huge{
+  background-color: #fff;
+  position: absolute;
+  width: 200%;
+  height: 800px;
+  left: -50%;
+  top: px;
+  transform: rotateZ(-26deg);
+}
+.homepage-projects{
+  height: 1200px;
+}
