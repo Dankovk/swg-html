@@ -523,8 +523,8 @@
 
                 <section class="competence">
                     <div class="competence-bg"><div class="dotted-bg"></div></div>
-                    <div class="layout-container">
-                        <h1>ключевые<br>
+                    <div class="layout-container competence-container">
+                        <h1 class="key-competence">ключевые<br>
                         компетенции</h1>
                         <div class="competence-table-block">
                             <div class="white-line"></div>
@@ -705,7 +705,6 @@
 
 
 
-                
 
 
             </div><!--wrapper-->
@@ -714,6 +713,12 @@
 
 
         <!-- partial:include('page/footer.partial.html') -->
+        <script>
+            obt1 = new Vivus('build_1', {type: 'oneByOne', delay:100, duration: 200, start: "inViewport"});
+            obt2 = new Vivus('build_2', {type: 'oneByOne', delay:100, duration: 150, start: "inViewport"});
+            obt3 = new Vivus('build_3', {type: 'oneByOne', delay:100, duration: 150, start: "inViewport"});
+            obt4 = new Vivus('castle_1', {type: 'oneByOne', delay:100, duration: 150, start: "inViewport"});
+        </script>
 
     </body>
 </html>

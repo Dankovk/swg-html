@@ -76,10 +76,20 @@ $(document).ready(function() {
        if (n == 3) n = 0;
    }, 3000);
 
-    obt1 = new Vivus('build_1', {type: 'oneByOne', delay:100, duration: 200, start: "inViewport"});
-    obt2 = new Vivus('build_2', {type: 'oneByOne', delay:100, duration: 150, start: "inViewport"});
-    obt3 = new Vivus('build_3', {type: 'oneByOne', delay:100, duration: 150, start: "inViewport"});
-    obt4 = new Vivus('castle_1', {type: 'oneByOne', delay:100, duration: 150, start: "inViewport"});
+
+
+    $(window).on('scroll',function(e){
+        parallaxScroll();
+    });
+
+    function parallaxScroll(){
+        var scrolled = $(window).scrollTop();
+        $('.waved-bg').css('top',(0-(scrolled*.25))+'px');
+        $('.dotted-bg').css('top',(0-(scrolled*.25))+'px');
+        $('.key-competence').css('margin-top',(0-(scrolled*.15))+'px');
+
+
+    }
 
     // inViewPort function for each svg element
     //

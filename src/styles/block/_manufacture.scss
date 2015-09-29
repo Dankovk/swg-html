@@ -1,8 +1,11 @@
 .specialization-block{
   display: inline-block;
-  width: 24%;
-  height: 162px;
+  width: 45%;
+  height: 419px;
   vertical-align: top;
+}
+.projects-manufacture{
+  padding-top: 300px;
 }
 .scope-content {
 
@@ -12,40 +15,241 @@
   }
 }
 .specialization-cont{
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .svg-block{
-  height: 70px;
-  width: 70px;
-  background: red;
-  transition: all 10s ease-in-out;
+  height: 320px;
+  width: 100%;
 
   text-align: center;
   color: #fff;
   font-size: 50px;
-  &:hover{
-    transform: rotateZ(14400deg) scale(5) skew(55deg, 55deg) ;
-    -webkit-filter: hue-rotate(180deg);
-    background: darkturquoise;
-  }
+
 }
 .text-block{
   margin-top: 20px;
+  text-align: center;
   span{
     text-transform: uppercase;
     color: #297acc;
     font-weight: bold;
   }
 }
+.equipment{
+  position: relative;
+  text-align: center;
+  .equipment-header{
+    text-align: left;
+  }
+}
 .equipment-bg{
   position: absolute;
-  background-color: blue;
+  left: 50%;
+  top: -170px;
+  z-index: -1;
+  background: linear-gradient(45deg, #fefefe 0%, #fefefe 3%, #c2d4e5 83%, #c2d4e5 87%, #c2d4e5 95%, #c2d4e5 100%);
   width: 1000px;
   height: 1000px;
-  left: 0;
+  left: 25%;
+  margin-left: -274px;
+  -webkit-transform: rotate(135deg) skew(20deg, 20deg);
   transform: rotate(135deg) skew(20deg, 20deg);
   transition: all 3s infinite;
-  animation:   5s infinite;
+  -webkit-animation: 5s infinite;
+  animation: 5s infinite
 
  
+}
+  .equipment-section {
+    .equipment-h1 {
+      margin-top: 400px;
+      padding-left: 0;
+    }
+  }
+
+.equipment-item {
+  display: inline-block;
+  width: 30%;
+  margin-top: 0;
+  .text-block{
+    text-align: left;
+    span {
+
+      color: #000;
+    }
+  }
+}
+.manufacture-guarantees{
+  h1{
+    margin-top: 180px;
+  }
+  ul{
+    li{
+      font-size: 20px;
+      position: relative;
+      display: inline-block;
+      width: 200px;
+      vertical-align: top;
+      margin-right: 50px;
+      padding-top: 15px;
+      &:before{
+        top:29px;
+      }
+    }
+  }
+  .background-lock {
+    position: absolute;
+    right: 0;
+    top: 600px;
+    z-index: -1;
+  }
+  .manufacture-guarantees-bg{
+    transform: rotateZ(26deg);
+    height: 900px;
+    .manufacture-guarantees-waved-bg{
+      transform: rotateZ(-26deg);
+      width: 239%;
+      height: 2000%;
+
+
+    }
+  }
+}
+.workers-bg-f{
+  width: 100%;
+  height: 200%;
+
+  background-repeat: no-repeat;
+
+}
+.workers-bg-s{
+  width: 100%;
+  height: 200%;
+
+  background-repeat: no-repeat;
+
+}
+.workers{
+  position: absolute;
+  transform: rotateZ(-26deg);
+}
+.workers-bg-t{
+  width: 100%;
+  height: 200%;
+
+  background-repeat: no-repeat;
+
+}
+.corrosion{
+  position: relative;
+  height: 1000px;
+}
+.corrosion-bg{
+  position: absolute;
+  height: 920px;
+  left: -50%;
+  top: 0;
+  transform: rotateZ(26deg);
+  width: 200%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  background-color: #1d252b;
+}
+.padding-top-svg{
+  padding-top: 20px;
+}
+.equipment-header{
+  color: #000;
+}
+.manufacture-work-scheme{
+  margin-top:430px ;
+}
+ul{
+  li{
+    p{
+      span{
+        color: #98a5b3;
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+.small-rhombus{
+  background-size: 84%;
+  height: 52px !important;
+  p{
+    display: inline-block;
+    margin-top: 34px;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  &:nth-of-type(2){
+    margin-left: -110px;
+  }
+  &:last-of-type{
+    margin-left:-215px ;
+  }
+}
+.corrosion-h1{
+  color: #fff;
+  text-align: left;
+  padding-top: 100px;
+}
+.small-rhombus-wrap{
+
+
+
+
+
+  &:before{
+
+    position: absolute;
+    top: 68px;
+    left: -227px;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 300px;
+    transform: rotateZ(-26deg);
+    background-color: #e8e8e8;
+  }
+}
+.corrosion{
+  text-align: left;
+  .svg-cont{
+    float: right !important;
+    margin-top: 150px;
+    display: inline-block;
+    float: left;
+    width: 300px;
+    margin-left: 60px;
+  }
+
+  .text-block{
+    display: inline-block;
+    text-align: left;
+
+
+    span{
+      color: #fff;
+      text-transform: none;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+.small-rhombus {
+  .differ-paragraph {
+    line-height: 18px;
+    margin-top: 55px;
+    margin-left: 10px;
+
+  }
 }
