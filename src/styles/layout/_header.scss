@@ -98,10 +98,15 @@ $layout-header-fixed: false !default;
 	}
 	.header-tel{
 		position: fixed;
-		top:44px;
+		top:35px;
 		right: 50px;
 		font-size: 16px;
 		transition: all .25s linear;
+	  	cursor:pointer;
+	  	transition: all .3s linear;
+	  	&:hover{
+		  opacity: .5;
+		}
 		span{
 			color:$text-blue;
 		}
@@ -124,7 +129,7 @@ $layout-header-fixed: false !default;
 		top:0;
 	}
 	.header-tel{
-		top:30px;
+	  top: 15px;
 	}
 
 	.top-header-bg{
