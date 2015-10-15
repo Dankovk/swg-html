@@ -1,28 +1,78 @@
+<?php
+/*
+Template Name: Template for Projecting Page
+*/
+?>
+<!doctype html>
 <!doctype html>
 <html class="no-js">
-    <head>
-        <!-- partial:include('page/meta.partial.html') -->
-    </head>
-    <body>
-    <!--[if lt IE 10]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Steel Work Group</title>
+        <meta name="description" content="Barebones HTML project">
+        <meta name="viewport" content="width=1024, minimal-ui">
 
-    <div class="layout-header">
-        <div class="top-header-bg"></div>
-        <a href="index.html" class="main-logo">
-            <img src="images/logo.png" alt="">
-            <div class="logo-text">STEEL WORK GROUP</div>
-        </a>
-        <div class="nav-bar">
-            <ul>
-                <li class="active"><a href="projecting.html">Проектирование</a></li>
-                <li><a href="manufacture.html">Изготовление</a></li>
-                <li><a href="assembly.html">Монтаж</a></li>
-            </ul>
+        <!-- Favicon block -->
+        <!-- Images generated from a single 260x260 image by http://realfavicongenerator.net/ -->
+        <link rel="shortcut icon" href="<?php popel_theme_uri(); ?>favicon.ico">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="<?php popel_theme_uri(); ?>/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="<?php popel_theme_uri(); ?>/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="<?php popel_theme_uri(); ?>/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="<?php popel_theme_uri(); ?>/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="<?php popel_theme_uri(); ?>/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="<?php popel_theme_uri(); ?>/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="<?php popel_theme_uri(); ?>/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="<?php popel_theme_uri(); ?>/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php popel_theme_uri(); ?>/apple-touch-icon-180x180.png">
+
+        <link rel="icon" type="image/png" href="<?php popel_theme_uri(); ?>/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="<?php popel_theme_uri(); ?>/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="<?php popel_theme_uri(); ?>/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="<?php popel_theme_uri(); ?>/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/manifest.json">
+
+        <meta name="apple-mobile-web-app-title" content="SWG">
+        <meta name="application-name" content="SWG">
+        <meta name="msapplication-TileColor" content="#1e242b">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- / Favicon block -->
+
+        <link rel="stylesheet" href="<?php popel_theme_uri(); ?>/styles/main.css">
+
+
+
+
+        <!-- Cached build -->
+        <script src="<?php popel_theme_uri(); ?>/scripts/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- /
+
+        <!-- -->
+
+</head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="layout-header">
+            <div class="top-header-bg"></div>
+        	<a href="http://swg.popel-studio.com/" class="main-logo">
+        		<img src="<?php popel_theme_uri(); ?>/images/logo.png" alt="">
+        		<div class="logo-text">STEEL WORK GROUP</div>
+        	</a>
+        	<div class="nav-bar">
+        		<ul>
+        			<li class="active"><a href="http://swg.popel-studio.com/proektirovanie/">Проектирование</a></li>
+        			<li><a href="http://swg.popel-studio.com/izgotovlenie/">Изготовление</a></li>
+        			<li><a href="http://swg.popel-studio.com/montazh/">Монтаж</a></li>
+        		</ul>
+        	</div>
+        	<div class="header-tel">+380 44 456 <span>-</span>17<span>-</span>32</div>
         </div>
-        <div class="header-tel">+380 44 456 <span>-</span>17<span>-</span>32</div>
-    </div>
+
 
         <div class="layout-content">
             <div class="content-wrapper">
@@ -30,13 +80,13 @@
                 <section class="head-block projecting-head-block">
                     <div class="layout-container">
                         <div class="head-content">
-                            <h2>Проектируем эстетичные и надежные<br>
-                                конструкции из металла и железобетона</h2>
+                            <h2>Мы специализируемся на проектировании<br>
+                            эффективных, надёжных и привлекательных<br>
+                            металлических и железобетонных конструкций</h2>
                         </div>
-
+                        <div class="arrow-bottom"><div class="arrow-down"></div></div>
                     </div><!--layout-content-->
                 </section>
-                <div class="arrow-bottom"><div class="arrow-down"></div></div>
 
                 <section class="scope-block">
                      <div class="line right-f"></div>
@@ -50,9 +100,9 @@
                         <div class="scope-content">
                             <h1>Cферы<br>
                             применения</h1>
-                            <div class="scope-info-block padding-top">
+                            <div class="scope-info-block">
 
-                                <!--<img src="images/scope-img-f.png" alt="" class="scope-img">-->
+                                <!--<img src="<?php popel_theme_uri(); ?>/images/scope-img-f.png" alt="" class="scope-img">-->
                                 <div class="svg-cont">
                                     <svg version="1.1" id="build_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                              y="0px" width="267px" height="232px" viewBox="-135.8 -105 267 232" enable-background="new -135.8 -105 267 232"
@@ -546,23 +596,7 @@
                         компетенции</h1>
                         <div class="competence-table-block">
                             <div class="white-line"></div>
-                            <div class="competence-item"><div class="svg-table">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 width="70px" height="70px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                            <path d="M75.656,54.606c0.113-0.47-0.176-0.942-0.646-1.055c-0.474-0.114-0.943,0.177-1.055,0.646
-                                c-1.262,5.251-4.492,9.764-8.854,12.938l-7.424-20.096c4.431-2.629,7.41-7.446,7.41-12.972c0-8.038-6.29-14.588-14.213-15.044
-                                v-6.123c0-0.483-0.392-0.875-0.875-0.875s-0.875,0.392-0.875,0.875v6.123c-7.923,0.456-14.213,7.006-14.213,15.044
-                                c0,5.231,2.663,9.837,6.706,12.544l-7.391,20.008c-4.017-3.14-6.986-7.445-8.182-12.42c-0.112-0.469-0.581-0.76-1.055-0.646
-                                c-0.47,0.113-0.759,0.585-0.646,1.056c1.334,5.548,4.695,10.335,9.245,13.738l-6.814,18.445c-0.167,0.453,0.064,0.956,0.518,1.123
-                                c0.1,0.037,0.203,0.055,0.303,0.055c0.356,0,0.69-0.219,0.821-0.572l6.66-18.028C39.37,72.153,44.54,73.777,50,73.777
-                                c5.166,0,10.072-1.459,14.223-3.97L70.722,87.4c0.13,0.354,0.465,0.572,0.821,0.572c0.101,0,0.203-0.018,0.303-0.055
-                                c0.453-0.167,0.685-0.67,0.518-1.123l-6.639-17.973C70.617,65.396,74.258,60.427,75.656,54.606z M36.662,34.069
-                                c0-7.355,5.983-13.338,13.338-13.338s13.338,5.983,13.338,13.338c0,5.069-2.843,9.484-7.017,11.741
-                                c-0.01,0.003-0.019,0.001-0.029,0.005c-0.027,0.01-0.045,0.031-0.071,0.044c-1.859,0.985-3.975,1.549-6.221,1.549
-                                C42.645,47.407,36.662,41.424,36.662,34.069z M50,72.027c-5.257,0-10.221-1.61-14.3-4.343l7.455-20.181
-                                c2.056,1.05,4.378,1.654,6.845,1.654c2.178,0,4.244-0.471,6.114-1.302l7.497,20.294C59.668,70.605,54.96,72.027,50,72.027z"/>
-                            </svg>
-                            </div>Проектируем конструкции любой<br> сложности:  от типовых до уникальных</div>
+                            <div class="competence-item">Проектирование уникальных <br>металлических и железобетоных конструкций</div>
                             <div class="competence-item">Инженеры обучены <br>
                             работе с еврокодами</div>
                             <div class="competence-item">Сертификаты специализированных <br>бюро о уровне владения <br>профессиональным ПО</div>
@@ -613,15 +647,15 @@
                         сотрудничество</h1>
                         <p class="on-map-p">Компания Steel Work Group выполнила более 123 проектов <br>
                         для 107 компаний из 25 стран мира</p>
-                        <div class="map-block"><img src="images/map.png" alt="" class="map-img"/> <div class="links-of-companies">
+                        <div class="map-block"><img src="<?php popel_theme_uri(); ?>/images/map.png" alt="" class="map-img"/> <div class="links-of-companies">
                             <img src="" alt="" class="destination-img"/> </div></div>
 
                         <div class="partners-block">
                             <p>Среди наших клиентов</p>
-                            <a href=""><img class="wow slideInLeft" src="images/company_001.png" alt=""/></a>
-                            <a href=""><img class="wow slideInLeft" src="images/company_002.png" alt=""/></a>
-                            <a href=""><img class="wow slideInRight" src="images/company_003.png" alt=""/></a>
-                            <a href=""><img class="wow slideInRight" src="images/company_004.png" alt=""/></a>
+                            <a href=""><img class="wow slideInLeft" src="<?php popel_theme_uri(); ?>/images/company_001.png" alt=""/></a>
+                            <a href=""><img class="wow slideInLeft" src="<?php popel_theme_uri(); ?>/images/company_002.png" alt=""/></a>
+                            <a href=""><img class="wow slideInRight" src="<?php popel_theme_uri(); ?>/images/company_003.png" alt=""/></a>
+                            <a href=""><img class="wow slideInRight" src="<?php popel_theme_uri(); ?>/images/company_004.png" alt=""/></a>
                         </div>
                     </div>
                 </section>
@@ -745,59 +779,59 @@
                         <button class="send-btn">Отправить</button>
                     </div>
                     <div class="footer-footer">
-                        <div class="layout-container">
-                            <div class="swg-2015">
-                                <span class="year">2015 &copy;</span>
-                                <span>STEEL WORK GROUP</span>
-                            </div>
-                            <div class="popel-agency">
-                                <span class="development">Разработка сайта &ensp;—  </span>
-                                <div class="svg-popel">
-                                    <svg version="1.1" id="content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="197.151px" height="14.483px" viewBox="0 0 197.151 14.483" enable-background="new 0 0 197.151 14.483"
-	 xml:space="preserve">
-<g>
-	<g>
-		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M5.868,0.016H3.024H0v14.227h3.024V8.729h2.843
-			c1.6,0,4.449-1.333,4.449-4.357C10.317,1.171,7.468,0.016,5.868,0.016 M4.98,6.152H3.024V2.594H4.98c0,0,2.133-0.088,2.133,1.778
-			C7.113,6.239,4.98,6.152,4.98,6.152"/>
-		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M22.941,0.016c-3.928,0-7.112,3.184-7.112,7.114
-			c0,3.927,3.183,7.113,7.112,7.113c3.927,0,7.113-3.186,7.113-7.113C30.054,3.2,26.868,0.016,22.941,0.016 M22.941,11.576
-			c-3.212,0-4-2.81-4-4.446c0-1.638,1.054-4.447,4-4.447c2.947,0,4.001,3.018,4.001,4.447C26.942,8.557,26.154,11.576,22.941,11.576
-			"/>
-		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M42.414,0.016H39.57h-3.025v14.227h3.025V8.729h2.843
-			c1.6,0,4.448-1.333,4.448-4.357C46.862,1.171,44.014,0.016,42.414,0.016 M41.525,6.152H39.57V2.594h1.954
-			c0,0,2.135-0.088,2.135,1.778C43.659,6.239,41.525,6.152,41.525,6.152"/>
-		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="61.267,2.683 61.267,0.016 55.931,0.016 52.907,0.016
-			52.907,14.243 55.931,14.243 61.267,14.243 61.267,11.576 55.931,11.576 55.931,8.374 61.267,8.374 61.267,5.707 55.931,5.707
-			55.931,2.683 		"/>
-		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="73.626,11.131 73.626,0.016 70.602,0.016 70.602,14.243
-			73.626,14.243 80.739,14.243 80.739,11.131 		"/>
-	</g>
-	<circle fill-rule="evenodd" clip-rule="evenodd" fill="#D8222A" cx="92.083" cy="7.41" r="2.25"/>
-	<g>
-		<path fill="#FFFFFF" d="M103.285,14.243l6.361-14.083h0.86l6.321,14.083h-0.96l-1.86-4.121h-7.882l-1.86,4.121H103.285z
-			 M106.446,9.322h7.221l-3.601-7.962L106.446,9.322z"/>
-		<path fill="#FFFFFF" d="M122.25,12.442c-1.34-1.38-2.021-3.1-2.021-5.201c0-2.081,0.681-3.801,2.021-5.181
-			C123.591,0.68,125.271,0,127.251,0c1.801,0,3.321,0.48,4.562,1.46v0.98c-1.32-1.04-2.821-1.56-4.501-1.56
-			c-1.74,0-3.201,0.6-4.381,1.82c-1.181,1.2-1.761,2.721-1.761,4.561c0,1.82,0.58,3.341,1.761,4.541c1.18,1.2,2.62,1.8,4.32,1.8
-			c1.881,0,3.361-0.56,4.421-1.66V6.222h0.921v6.062c-1.341,1.46-3.121,2.2-5.342,2.2C125.271,14.483,123.591,13.803,122.25,12.442z
-			"/>
-		<path fill="#FFFFFF" d="M138.569,14.243V0.24h9.362v0.86h-8.442v5.181h6.981v0.86h-6.981v6.241h8.762v0.86H138.569z"/>
-		<path fill="#FFFFFF" d="M153.202,14.243V0.24h0.82l9.542,12.402V0.24h0.92v14.003h-0.8L154.122,1.82v12.423H153.202z"/>
-		<path fill="#FFFFFF" d="M172.122,12.442c-1.34-1.38-2.021-3.1-2.021-5.201s0.681-3.821,2.021-5.181
-			C173.463,0.68,175.143,0,177.144,0c1.521,0,2.86,0.36,4.001,1.101v1c-1.221-0.82-2.541-1.22-3.981-1.22
-			c-1.72,0-3.181,0.6-4.36,1.82c-1.181,1.2-1.761,2.721-1.761,4.541s0.58,3.341,1.761,4.561c1.18,1.2,2.641,1.8,4.381,1.8
-			c1.66,0,3.08-0.479,4.28-1.46v1.021c-1.16,0.88-2.601,1.32-4.32,1.32C175.143,14.483,173.463,13.803,172.122,12.442z"/>
-		<path fill="#FFFFFF" d="M190.771,14.243V7.762L185.31,0.24h1.12l4.82,6.642l4.842-6.642h1.06l-5.461,7.501v6.501H190.771z"/>
-	</g>
-</g>
-</svg>
+                    				<div class="layout-container">
+                    					<div class="swg-2015">
+                    						<span class="year">2015 &copy;</span>
+                    						<span>STEEL WORK GROUP</span>
+                    					</div>
+                    					<div class="popel-agency">
+                    						<span class="development">Разработка сайта &ensp;—  </span>
+                    						<div class="svg-popel">
+                    							<svg version="1.1" id="content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	 width="197.151px" height="14.483px" viewBox="0 0 197.151 14.483" enable-background="new 0 0 197.151 14.483"
+                    	 xml:space="preserve">
+                    <g>
+                    	<g>
+                    		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M5.868,0.016H3.024H0v14.227h3.024V8.729h2.843
+                    			c1.6,0,4.449-1.333,4.449-4.357C10.317,1.171,7.468,0.016,5.868,0.016 M4.98,6.152H3.024V2.594H4.98c0,0,2.133-0.088,2.133,1.778
+                    			C7.113,6.239,4.98,6.152,4.98,6.152"/>
+                    		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M22.941,0.016c-3.928,0-7.112,3.184-7.112,7.114
+                    			c0,3.927,3.183,7.113,7.112,7.113c3.927,0,7.113-3.186,7.113-7.113C30.054,3.2,26.868,0.016,22.941,0.016 M22.941,11.576
+                    			c-3.212,0-4-2.81-4-4.446c0-1.638,1.054-4.447,4-4.447c2.947,0,4.001,3.018,4.001,4.447C26.942,8.557,26.154,11.576,22.941,11.576
+                    			"/>
+                    		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M42.414,0.016H39.57h-3.025v14.227h3.025V8.729h2.843
+                    			c1.6,0,4.448-1.333,4.448-4.357C46.862,1.171,44.014,0.016,42.414,0.016 M41.525,6.152H39.57V2.594h1.954
+                    			c0,0,2.135-0.088,2.135,1.778C43.659,6.239,41.525,6.152,41.525,6.152"/>
+                    		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="61.267,2.683 61.267,0.016 55.931,0.016 52.907,0.016
+                    			52.907,14.243 55.931,14.243 61.267,14.243 61.267,11.576 55.931,11.576 55.931,8.374 61.267,8.374 61.267,5.707 55.931,5.707
+                    			55.931,2.683 		"/>
+                    		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="73.626,11.131 73.626,0.016 70.602,0.016 70.602,14.243
+                    			73.626,14.243 80.739,14.243 80.739,11.131 		"/>
+                    	</g>
+                    	<circle fill-rule="evenodd" clip-rule="evenodd" fill="#D8222A" cx="92.083" cy="7.41" r="2.25"/>
+                    	<g>
+                    		<path fill="#FFFFFF" d="M103.285,14.243l6.361-14.083h0.86l6.321,14.083h-0.96l-1.86-4.121h-7.882l-1.86,4.121H103.285z
+                    			 M106.446,9.322h7.221l-3.601-7.962L106.446,9.322z"/>
+                    		<path fill="#FFFFFF" d="M122.25,12.442c-1.34-1.38-2.021-3.1-2.021-5.201c0-2.081,0.681-3.801,2.021-5.181
+                    			C123.591,0.68,125.271,0,127.251,0c1.801,0,3.321,0.48,4.562,1.46v0.98c-1.32-1.04-2.821-1.56-4.501-1.56
+                    			c-1.74,0-3.201,0.6-4.381,1.82c-1.181,1.2-1.761,2.721-1.761,4.561c0,1.82,0.58,3.341,1.761,4.541c1.18,1.2,2.62,1.8,4.32,1.8
+                    			c1.881,0,3.361-0.56,4.421-1.66V6.222h0.921v6.062c-1.341,1.46-3.121,2.2-5.342,2.2C125.271,14.483,123.591,13.803,122.25,12.442z
+                    			"/>
+                    		<path fill="#FFFFFF" d="M138.569,14.243V0.24h9.362v0.86h-8.442v5.181h6.981v0.86h-6.981v6.241h8.762v0.86H138.569z"/>
+                    		<path fill="#FFFFFF" d="M153.202,14.243V0.24h0.82l9.542,12.402V0.24h0.92v14.003h-0.8L154.122,1.82v12.423H153.202z"/>
+                    		<path fill="#FFFFFF" d="M172.122,12.442c-1.34-1.38-2.021-3.1-2.021-5.201s0.681-3.821,2.021-5.181
+                    			C173.463,0.68,175.143,0,177.144,0c1.521,0,2.86,0.36,4.001,1.101v1c-1.221-0.82-2.541-1.22-3.981-1.22
+                    			c-1.72,0-3.181,0.6-4.36,1.82c-1.181,1.2-1.761,2.721-1.761,4.541s0.58,3.341,1.761,4.561c1.18,1.2,2.641,1.8,4.381,1.8
+                    			c1.66,0,3.08-0.479,4.28-1.46v1.021c-1.16,0.88-2.601,1.32-4.32,1.32C175.143,14.483,173.463,13.803,172.122,12.442z"/>
+                    		<path fill="#FFFFFF" d="M190.771,14.243V7.762L185.31,0.24h1.12l4.82,6.642l4.842-6.642h1.06l-5.461,7.501v6.501H190.771z"/>
+                    	</g>
+                    </g>
+                    </svg>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    						</div>
+                    					</div>
+                    				</div>
+                    			</div>
                 </section>
 
 
@@ -809,7 +843,34 @@
 
 
 
-        <!-- partial:include('page/footer.partial.html') -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+        <!-- -->
+
+        <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-2.1.3.min.js"><\/script>')</script>
+
+
+
+
+        <!-- Cached build -->
+        <script src="<?php popel_theme_uri(); ?>/scripts/main.min.js"></script>
+        <!-- /
+
+        <!-- -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-XXXXX-X', 'auto');
+            ga('send', 'pageview');
+        </script> -->
+
         <script>
             obt1 = new Vivus('build_1', {type: 'oneByOne', delay:100, duration: 200, start: "inViewport"});
             obt2 = new Vivus('build_2', {type: 'oneByOne', delay:100, duration: 150, start: "inViewport"});

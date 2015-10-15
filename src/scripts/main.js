@@ -44,14 +44,14 @@
 
       //swap original IMG with SVG
       $(this).replaceWith(maskSVG);
-      
+
       //clean up
       delete maskSVG;
     });
 
-  
 
-  
+
+
     $('image').on('mouseover', function(){
       $(this).css({'transform':'translate(-5%, -5%) scale(1.1)', '-webkit-transform':'translate(-5%, -5%) scale(1.1)', '-moz-transform':'translate(-5%, -5%) scale(1.1)', '-ms-transform':'translate(-5%, -5%) scale(1.1)', '-o-transform':'translate(-5%, -5%) scale(1.1)', 'z-index':'99'});
       $(this).parents('.romb, #svgMask').css({'z-index':'99'});
@@ -68,6 +68,30 @@
 
 
 
+(function() {
+    var lastTime = 0;
+    var vendors = ['ms', 'moz', 'webkit', 'o'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
+            || window[vendors[x]+'CancelRequestAnimationFrame'];
+    }
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+                timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+}());
+
+
 $(document).ready(function() {
    var n = 1;
    var interval = setInterval(function(){
@@ -77,16 +101,89 @@ $(document).ready(function() {
    }, 3000);
 
 
+    //
+    //$(window).on('scroll',function(e){
+    //    parallaxScroll();
+    //    console.log(1-($(window).scrollTop()*100)/$(window).height());
+    //});
 
-    $(window).on('scroll',function(e){
-        parallaxScroll();
-    });
+
+
+     function update(){
+         var slideBack = $('.slide-background.active');
+         var headContent =  $('.head-content');
+         var headBlock = $('.projecting-head-block');
+
+         var scrolled = $(window).scrollTop();
+         slideBack.css({
+             'transform': 'translate3d('+0+","+ scrolled *.65+'px,'+0+')',
+             'opacity': 1 - (scrolled*100/$(window).height())/100
+         });
+         headContent.css({
+             'transform': "translate3d("+0+","+($('.head-block').height()/2+scrolled *.60)+"px,"+0+")",
+             'opacity': 1 - (scrolled*100/$(window).height())/100
+
+
+         });
+         headBlock.css({
+             'transform': 'translate3d('+0+","+ scrolled *.65+'px,'+0+')',
+             'opacity': 1 - (scrolled*100/$(window).height())/100
+         });
+         if(scrolled > 1) {
+             $('.layout-header').addClass('black-head');
+         }
+         else {
+             $('.layout-header').removeClass('black-head');
+         }
+         requestAnimationFrame(update);
+     }
+    requestAnimationFrame(update);
+
+
+
+
+
 
     function parallaxScroll(){
+        var slideBack = $('.slide-background.active');
+        var headContent =  $('.head-content');
+        var headBlock = $('.projecting-head-block');
         var scrolled = $(window).scrollTop();
-        $('.waved-bg').css('top',(0-(scrolled*.25))+'px');
-        $('.dotted-bg').css('top',(0-(scrolled*.25))+'px');
-        $('.key-competence').css('margin-top',(0-(scrolled*.15))+'px');
+        if(scrolled > 1) {
+            $('.layout-header').addClass('black-head');
+        }
+        else {
+            $('.layout-header').removeClass('black-head');
+        }
+
+        //$('.waved-bg').css('top',(0-(scrolled*.25))+'px');
+        //$('.dotted-bg').css('top',(0-(scrolled*.25))+'px');
+        //$('.key-competence').css('margin-top',(0-(scrolled*.15))+'px');
+
+        slideBack.css({
+            'transform': 'translate3d('+0+","+ scrolled *.65+'px,'+0+')',
+            'opacity': 1 - (scrolled*100/$(window).height())/100
+        });
+        headBlock.css({
+            'transform': 'translate3d('+0+","+ scrolled *.65+'px,'+0+')',
+            'opacity': 1 - (scrolled*100/$(window).height())/100
+        });
+
+        headContent.css({
+            'transform': "translate3d("+0+","+($('.head-block').height()/2+scrolled *.60)+"px,"+0+")",
+            'opacity': 1 - (scrolled*100/$(window).height())/100
+
+
+        });
+
+        //$('.workers-bg-manuf').css({
+        //    'top': $('.head-block').height()/2 + (scrolled-5500) *.50+'px',
+        //    'opacity': 1 - (scrolled*100/$('.workers-bg-manuf').offset.top)/100
+        //
+        //
+        //
+        //});
+
 
 
     }
@@ -97,14 +194,14 @@ $(document).ready(function() {
     //     if($(''+dom+'').is(':in-viewport()')){
     //         obt.play(1);
     //     }
-        
+
     // }
 
     // $('.layout-content').on('scroll',function(){
     //     startDraw('#build_1', obt1);
     //     startDraw('#build_2', obt2);
     //     startDraw('#build_3', obt3);
-        
+
     // });
 
     checkHeader();
@@ -129,14 +226,47 @@ $(document).ready(function() {
 
 //check window Offset to change header style
 var checkHeader = function(){
-     if(window.pageYOffset > window.screen.height - 200) {
-          $('.layout-header').addClass('black-head');
-     }
-     else {
-          $('.layout-header').removeClass('black-head');
-     }
+
  };
 
-$(document).on('scroll', function(){
-    checkHeader();
+    $('.form-control').on('blur', function(){
+        if(!$(this).val().length==0){
+            $(this).addClass('not-empty');
+        }else{
+            $(this).removeClass('not-empty');
+        }
+    });
+$(document).on('click','.arrow-bottom', function(){
+    $('body').animate({scrollTop:$('.scope-content').offset().top-80});
+});
+$(document).on('slide.bs.carousel','.carousel',function(event) {
+    var $this   = $(this),
+        $slides = $this.find('.item'),
+        $next   = $(event.relatedTarget),
+        $active = $slides.filter('.active'),
+        $bg = $('.slide-background-wrap .slide-background'),
+
+        activeIndex = $slides.index($active),
+        nextIndex   = $slides.index($next),
+        background = $this.find('.slide-background');
+
+    $bg.eq(nextIndex).addClass('active');
+    $bg.eq(activeIndex).removeClass('active');
+
+    // Hashnav
+    var hash = $next.data('hash');
+
+    if (hash) document.location.hash = '#!' + hash;
+    else document.location.hash = '';
+    $('.slide-background').css({
+        opacity:0
+    });
+    $('.slide-background.active').css({
+        opacity:1
+    })
+});
+
+
+$('.carousel').carousel({
+    interval: false
 });

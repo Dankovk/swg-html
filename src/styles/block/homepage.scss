@@ -1,4 +1,7 @@
 .homepage-content{
+  .padding-less{
+    font-size: 98px;
+  }
   .svg-cont{
     position: absolute;
     right: -64px;
@@ -73,9 +76,9 @@ section{
 .montage-bg{
   position: absolute;
   width: 200%;
-  top:-716px;
+  top: -864px;
   margin-top: -100px;
-  height: 1000px;
+  height: 840px;
   left: -50%;
   overflow: hidden;
   -webkit-transform: rotateZ(-26deg);
@@ -116,33 +119,35 @@ color: #fff;
 }
 
 .svg-cont {
-position: absolute;
-z-index: 100;
-right: 0;
-top: 230px;
+  position: absolute;
+  z-index: 100;
+  right: 150px;
+  top: 229px;
+  z-index: 1;
 }
 }
 .manufacturing-section-bg{
-position: relative;
-width: 200%;
-height: 1890px;
-left: -50%;
-overflow: hidden;
--webkit-transform: rotateZ(26deg);
-transform: rotateZ(26deg);
-background-color: #1d252b;
+  position: relative;
+  width: 200%;
+  height: 2010px;
+  left: -50%;
+  top: 18px;
+  overflow: hidden;
+  -webkit-transform: rotateZ(26deg);
+  transform: rotateZ(26deg);
+  background-color: #1d252b;
 .workers-bg-manuf{
-background-image: url("../images/manufactoring-bg.jpg");
-position: absolute;
-height: 152%;
-background-size: cover;
-width: 100%;
-background-repeat: no-repeat;
-top: -50%;
-left: -20%;
-opacity: .4;
--webkit-transform: rotateZ(-26deg);
-transform: rotateZ(-26deg);
+  background-image: url("../images/main_producting.jpg");
+  position: absolute;
+  height: 164%;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  top: -84%;
+  left: -3%;
+  opacity: .4;
+  -webkit-transform: rotateZ(-26deg);
+  transform: rotateZ(-26deg);
 }
 }
 .montage-header-relative{
@@ -156,13 +161,15 @@ transform: rotateZ(-26deg);
   background-color: #fff;
   position: absolute;
   width: 200%;
-  height: 800px;
+  height: 1051px;
   left: -50%;
-  top: px;
+  top: -148px;
+  -webkit-transform: rotateZ(-26deg);
   transform: rotateZ(-26deg);
 }
 .homepage-projects{
-  height: 1200px;
+  height: 970px;
+  padding-top: 40px;
 }
 .send-btn{
   background-color: transparent;
@@ -189,4 +196,118 @@ transform: rotateZ(-26deg);
 .tel{
   font-weight: bold;
   color: #a3b4bf;
+}
+.montage-container{
+  top:-200px;
+}
+.footer-footer{
+  height: 100px;
+  border-top: 1px solid #1d252b;
+  background-color: #212c33;
+  .year,.development{
+    color: #8fa5b3;
+  }
+}
+.svg-popel{
+  margin-left: 10px;
+  /* padding-top: 0px; */
+  /* margin-bottom: -13px; */
+  vertical-align: top;
+  margin-top: 3px;
+  svg {
+    fill: currentColor;
+  }
+}
+.swg-2015{
+  float: left;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  letter-spacing: 1px;
+}
+.popel-agency{
+  padding-top: 23px;
+  padding-bottom: 23px;
+  float: right;
+
+  span,div{
+    display: inline-block;
+  }
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-inner{
+    width: 100%;
+    height: 100%;
+  }
+  .item{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .3s ease-in, transform .6s ease-in ;
+  }
+  .item.active{
+    opacity: 1;
+  }
+  .item.right,.item.left{
+    opacity: .7;
+  }
+}
+.slide-background-wrap{
+  .active{
+    opacity: 1;
+  }
+}
+.slide-background{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity .3s linear;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+  &:first-of-type{
+    background-image: url("../images/main-slide-1.jpg");
+  }
+  &:nth-of-type(2){
+    background-image: url("../images/main-slide-2.jpg");
+  }
+  &:nth-of-type(3){
+    background-image: url("../images/main-slide-3.jpg");
+  }
+  &:last-of-type{
+    background-image:url("../images/main-slide-4.jpg") ;
+  }
+}
+.head-content{
+  transform: translate3d(0,50%,0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+}
+body{
+
 }
