@@ -22,7 +22,12 @@ $layout-header-fixed: false !default;
 	left: 0;
 	z-index: 9000111111;
   transform: translateZ(0);
+	.contact-us{
+	  position: absolute;
+	  top: 8px;
+	  left: 22px;
 
+	}
 	.main-logo{
 		position: fixed;
 		top: 30px;
