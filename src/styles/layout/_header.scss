@@ -20,7 +20,8 @@ $layout-header-fixed: false !default;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 50;
+	z-index: 9000111111;
+  transform: translateZ(0);
 
 	.main-logo{
 		position: fixed;
@@ -29,6 +30,7 @@ $layout-header-fixed: false !default;
 		transition: all .15s linear;
 		text-decoration: none;
 		color: #fff;
+	    z-index: 1111;
 		.logo-text{
 			display: inline-block;
 			font-size: 16px;
@@ -49,6 +51,37 @@ $layout-header-fixed: false !default;
 		li {
 			display: inline-block;
 			margin-right: 30px;
+		  position: relative;
+		  &:last-of-type{
+			&.active{
+			  &:before{
+				content: '';
+				display: block;
+				transform: rotateZ(-26deg);
+				width: 80px;
+				height: 2px;
+				top: 11px;
+				left: -11px;
+				position: absolute;
+				background-color: #1d6fc1;
+				z-index: -1;
+			  }
+			}
+		  }
+		   &.active{
+			 &:before{
+			   content: '';
+			   display: block;
+			   transform: rotateZ(-26deg);
+			   width: 80px;
+			   height: 2px;
+			   top: 11px;
+			   left: 12%;
+			   position: absolute;
+			   background-color: #1d6fc1;
+			   z-index: -1;
+			 }
+		   }
 			&.active a{
 				opacity: 1;
 			}
@@ -56,6 +89,7 @@ $layout-header-fixed: false !default;
 				color:#fff;
 				opacity: .35;
 				transition: all .25s linear;
+
 				&:hover{
 					opacity: 1;
 				}
@@ -75,14 +109,14 @@ $layout-header-fixed: false !default;
 	.top-header-bg{
 		opacity: 0;
 		height: 0;
-		transition: all .15s linear;
+		transition: all .3s ease-in-out;
 	}
 }
 
 
 
 .layout-header.black-head{
-	height: 80px;
+	height: 75px;
 	.main-logo{
 		top: 13px;
 	}
@@ -102,7 +136,7 @@ $layout-header-fixed: false !default;
 		width: 100%;
 		height: 100%;
 		background-color: #1d242c;
-		opacity: .5;
-		transition: all .15s linear;
+		opacity: 1;
+		transition: all .3s ease-in-out;
 	}
 }

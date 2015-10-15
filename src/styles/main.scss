@@ -17,6 +17,9 @@
 // Vendor
 @import "../vendor/selectize-scss/src/selectize.scss";
 @import "../vendor/selectize-scss/src/selectize.default.scss";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
 @import "../vendor/dropzone/dropzone";
 
 // Elements
@@ -49,6 +52,8 @@
 @import "block/head-block";
 @import "block/projects";
 @import "block/animate";
+@import "block/manufacture";
+@import "block/homepage";
 
 // @import "block/blockname";
 

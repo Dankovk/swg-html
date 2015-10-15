@@ -1,5 +1,5 @@
 .application{
-    height: 800px;
+    height: 700px;
     background: #212c33;
   h1{
     font-size: 90px;
@@ -11,8 +11,9 @@
 label{
   position: absolute;
   display: inline-block;
-
+  user-select: none;
   font-size: 18px;
+  cursor: text;
   left: 20px;
   top: 20.7%;
   color: #51616d;
@@ -43,6 +44,18 @@ input[type="text"]{
   }
 }
 .form-control:focus~label{
+  top:-18px;
+  background: #212c33;
+  padding: 5px;
+  color: #acb8bf;
+}
+input[type="text"].not-empty{
+  outline: none;
+  border: none;
+  border: 1px solid #607380;
+  background: #212c33;
+}
+.not-empty~label{
   top:-18px;
   background: #212c33;
   padding: 5px;

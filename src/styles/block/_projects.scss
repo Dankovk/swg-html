@@ -1,6 +1,6 @@
 .projects{
 	color:$black;
-	padding-top: 500px;
+	padding-top: 700px;
 	height: 1500px;
 	h1{
 		text-align: left;
@@ -127,6 +127,229 @@
 	  visibility: visible;
 	}
 }
+.assembly-page {
+	width: 100%;
+	h1 {
+		font-size: 100px;
+	}
+	.layout-container {
+		width: 990px;
+	}
+	.gallery-block {
+		top: 75px;
+	}
+	p {
+		font-size: 18px;
+		width: 400px;
+	}
+	.scope-block {
+		overflow: hidden;
+		height: 100%;
+		.right-s {
+			top: 313px;
+		}
+		.right-f {
+			top: -85px;
+		}
+		.mask-f {
+			top: 50px;
+		}
+		li {
+		  width: 283px;
+		  /* float: left; */
+		  display: inline-block;
+		  overflow: hidden;
+		  text-align: left;
+		  margin-right: 37px;
+		  &:first-of-type{
+			span{
+			  padding-left: 0;
+			}
+		  }
+			&:nth-child(2) {
+
+			}
+			&:last-of-type {
+				margin-right: 0;
+			}
+			img {
+				display: block;
+				float: left;
+			}
+			span {
+				margin-top: 30px;
+				display: block;
+				float: left;
+				clear: both;
+				color: #0f2d41;
+				font-size: 20px;
+				font-weight: 800;
+			  text-align: left;
+			  padding-left: 10px;
+
+			}
+		}
+	}
+	.equipment-section {
+		h1 {
+			text-align: left;
+		}
+		li {
+			display: inline-block;
+			width: 440px;
+			margin-top: 48px;
+			img {
+				float: left;
+			}
+			span {
+				color: #425466;
+				font-size: 18px;
+				float: left;
+				text-align: left;
+				width: 200px;
+				margin: 20px 0 0 40px;
+			}
+			&:first-of-type {
+				span {
+					width: 200px;
+				}
+			}
+			&:nth-of-type(2) {
+			  float: right;
+				span {
+					width: 310px;
+				}
+			}
+			&:last-of-type {
+			  float: right;
+				span {
+					width: 229px;
+				}
+			}
+		}
+		.layout-container {
+			position: relative;
+			z-index: 100;	
+		}
+		
+	}
+	.work-in {		
+		height: 1000px;
+
+		.layout-container {
+			position: relative;
+			z-index: 100;
+			margin-top: 271px;
+			h1 {
+			  position: relative;
+			  top:-200px;
+				z-index: 9000;
+				color: #1d252b;
+				text-align: left;
+				width: 550px;
+				float: left;
+			}
+			.right-part {
+				width: 310px;
+				float: right;
+				margin-top: 100px;
+				img {
+					float: right;
+					display: block;
+				}
+				.right-part-text-block {
+					clear: both;
+					padding-top: 10px;
+				}
+				p {
+					font-size: 20px;
+					font-weight: 800;
+					clear: both;
+					width: 200px;
+					margin-top: -3px;
+				}
+				span {
+					font-size: 18px;
+					width: 270px;
+					display: block;
+				}
+			}
+			.left-part {
+				width: 540px;
+				float: left;
+				margin-top: 120px;
+				img {
+					float: left;
+				}
+				.left-part-text-block {
+					float: left;
+					padding-top: 10px;
+					width: auto;
+					width: 250px;
+					margin-left: 40px;
+					margin-top: -40px;
+				}
+				p {
+					font-size: 20px;
+					font-weight: 800;
+					clear: both;
+					width: 200px;
+				}
+				span {
+					font-size: 18px;
+					width: 250px;
+					display: block;
+				}
+			}
+		}
+		.equipment-section-bg {
+		  position: absolute;
+		  height: 800px;
+		  left: -50%;
+		  top: 0;
+		  -webkit-transform: rotateZ(-26deg);
+		  transform: rotateZ(-26deg);
+		  width: 200%;
+		  position: absolute;
+		  overflow: hidden;
+		  top: 0;
+		  left: -50%;
+		  width: 200%;
+		  background-color: #1d252b;
+			.equipment-section-bg-rotate{
+			  position: absolute;
+			  height: 318%;
+			  top: -156%;
+			  left: 13%;
+			  right: -31px;
+			  top: -128%;
+			  -webkit-transform: rotateZ(26deg);
+			  transform: rotateZ(26deg);
+			  background-size: cover;
+			  background-repeat: no-repeat;
+			  background-position: -9% 24%;
+			  background: url(../images/assembly-heights.jpg);
+			}
+		}
+
+	}
+	.projects-manufacture {
+		padding-top: 100px;
+		position: relative;
+		z-index: 100;
+		height: 740px;
+		width: auto;
+	}
+	.manufacture-work-scheme {
+		p {
+			width: 125px;
+		}
+		.rhombus-2 {
+			top: 234px;
+			left: 384px;
+		}
+	}
+}
 
 image {
 	// &:hover{
@@ -135,4 +358,38 @@ image {
 	// }
 	overflow: hidden;
     transition: all .15s linear;
+}
+.work-in{
+  .left-block{
+	display: inline-block;
+	margin-top: 20px;
+	.svg-container{
+	  float: left;
+	  margin-right: 30px;
+	}
+  }
+  .right-block{
+	position: relative;
+	display: inline-block;
+	float: right;
+	/* top: -250px; */
+	top: 225px;
+	.svg-container{
+	  position: absolute;
+	  right: -14px;
+	  top: -64px;
+	}
+  }
+  .text{
+	width: 260px;
+	color: #000;
+	margin-right: 150px;
+	h3{
+	  font-weight: bold !important;
+	  line-height: 30px;
+	}
+  }
+  .text, .svg-container{
+	display: inline-block;
+  }
 }

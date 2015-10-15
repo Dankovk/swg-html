@@ -82,7 +82,7 @@
 .scope-info-text{
     margin: 0 60px;
     h4{
-        color: #297acc;
+        color: #0f2d41;
     }
     p{
         font-size: 18px;
@@ -100,10 +100,12 @@
     height: 300px;
     color:#231F20;
 }
+.scope-block{
+    svg * {
+        fill:none;
 
-svg * {
-    fill:none;
-   
+    }
+
 }
 #hi-there {
                 width: 100%;
