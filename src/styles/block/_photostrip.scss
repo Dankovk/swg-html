@@ -13,7 +13,6 @@
 }
 .photo-strip .photo > img {
     position: relative;
-    z-index: -1;
     display: block;
     max-width: 100%;
     width: 100%;
@@ -41,7 +40,6 @@
 }
 .photo-strip .strip-item > img {
     position: relative;
-    z-index: -1;
     display: block;
     max-width: 100%;
 }
@@ -72,14 +70,14 @@
 }
 .photo-strip .prev .arrow-left,
 .photo-strip .next .arrow-left {
-    background-image: url('../images/prjct-arrow-left.png');
+    background-image: url('../images/blue-arrow-left.png');
     background-position: 50% 50%;
     width: 10px;
     height: 30px;
 }
 .photo-strip .prev .arrow-right,
 .photo-strip .next .arrow-right {
-    background-image: url('../images/prjct-arrow-right.png');
+    background-image: url('../images/blue-arrow-right.png');
     background-position: 50% 50%;
     width: 10px;
     height: 30px;
