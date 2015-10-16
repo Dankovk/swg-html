@@ -139,7 +139,7 @@ $(document).ready(function() {
     //         'transform': 'translate3d('+0+","+ scrolled *.65+'px,'+0+')',
     //         'opacity': 1 - (scrolled*100/$(window).height())/100
     //     });
-         if(scrolled > 1 && scrolled < 1500) {
+         if(scrolled > 1 && scrolled < 1500 && !$('.layout-header').hasClass('header-portfolio')) {
              $('.layout-header').addClass('black-head');
          }
          else if(scrolled<1) {

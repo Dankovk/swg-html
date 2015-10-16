@@ -129,3 +129,99 @@
     }
   }
 }
+.projects{
+  .button-cont{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    transition: all .3s linear;
+    &:hover{
+      opacity: .5;
+    }
+  }
+  .contact-us{
+    position: absolute;
+    top: 8px;
+    left: 42px;
+
+    color: #1b78d6;
+
+  }
+}
+.button-cont{
+  position: relative;
+  margin-top: 20px;
+  display: block;
+  cursor: pointer;
+  transition: all .3s linear;
+  &:hover{
+    opacity: .5;
+  }
+
+}
+.contact-us{
+  position: absolute;
+  top: 8px;
+  left: 40px;
+  color: #1b78d6;
+  span{
+    font-size: 17px;
+    text-transform: none !important;
+  }
+
+}
+.pagin-head{
+  h1{
+    color: #000;
+    text-align: left;
+    display: inline-block;
+  }
+
+}
+.project-block{
+  display: inline-block;
+  margin-bottom: 30px;
+
+ &:nth-of-type(even){
+   padding-left: 50px;
+ }
+  .proj-descr{
+    display: block;
+    text-align: left;
+    color: #1b78d6;
+    &:hover{
+      color: #1b78d6 + 20%;
+    }
+    &:active{
+      color: #1b78d6 - 20%;
+    }
+  }
+  .company-role{
+    span{
+      display: block;
+      text-align: left;
+      color: #c1ccd3;
+    }
+  }
+}
+.header-portfolio{
+  position: static !important;
+  .nav-bar{
+    li{
+      a{
+        color: #1b78d6 !important;
+        opacity: 1!important;
+      }
+    }
+  }
+
+}
+.portfolio-content{
+  padding-top: 100px !important;
+  .application{
+    position: absolute;
+    width: 100%;
+    bottom: -537px;
+  }
+
+}
