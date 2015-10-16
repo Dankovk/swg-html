@@ -31,13 +31,13 @@
   //background-image: url("../images/main_background.jpg") !important;
 }
 .projecting-head-block{
-  background-image: url("../images/projecting_background.jpg") !important;
+
 }
 .producing-head-block{
-  background-image: url('../images/producting_background.jpg') !important;
+
 }
 .montage-head-block{
-  background-image: url('../images/montage_testosteron.jpg') !important;;
+
 }
 
 .work-in{
@@ -50,7 +50,7 @@
     height: 100vh;
     position: absolute;
     left: 0;
-    opacity: 1;
+    opacity: 0;
   }
 }
 .arrow-bottom {
@@ -82,5 +82,50 @@
     background-image: url(../images/arrow-down.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
+  }
+}
+.arrow-map{
+  display: inline-block;
+  position: absolute;
+
+}
+.head-content{
+  h1{
+    font-size: 87px;
+  }
+  p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+.autor-name,.autor-position{
+  color: #1d252b;
+}
+#Client-carousel{
+  position: relative;
+  .item{
+
+
+    &.left{
+      opacity: .3;
+    }
+    &.right{
+      opacity: .3;
+    }
+  }
+  .quote-block{
+    height: 500px;
+  }
+  .carousel-control{
+    top: 66%;
+    width:24%;
+    opacity: 1;
+    text-shadow: none;
+    &.right{
+      background-image: none;
+    }
+    &.left{
+      background-image: none;
+    }
   }
 }
