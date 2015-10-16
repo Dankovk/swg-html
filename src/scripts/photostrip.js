@@ -79,7 +79,7 @@
     };
 
     Plugin.prototype = {
-
+        
         constructor: Plugin,
 
         init: function (name, element, options) {

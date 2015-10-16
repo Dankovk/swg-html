@@ -10,6 +10,37 @@
 		text-align: center;
 		color: #8fa5b3;
 	}
+
+	.header-prj-bg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		min-width: 100%;
+		min-height: 100vh;
+	}
+
+	.prev-proj-head{
+		position: absolute;
+		top:50%;
+		left:20px;
+		width: 13px;
+		height: 43px;
+		background-image: url(../images/grey-arrow-left.png);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+
+	.next-proj-head{
+		width: 13px;
+		height: 43px;
+		top:50%;
+		right:20px;
+		background-image: url(../images/grey-arrow-right.png);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
 }
 
 
