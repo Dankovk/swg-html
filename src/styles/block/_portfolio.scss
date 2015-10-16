@@ -1,0 +1,167 @@
+#portfolio-head-block{
+	.head-content .h2{
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 60px;
+    	margin: 20px 0;
+	}
+	.project-finish{
+		font-size: 18px;
+		text-align: center;
+		color: #8fa5b3;
+	}
+}
+
+
+.main-content{
+	position: relative;
+	padding-top: 100px;
+	color:#000;
+}
+.p-block{
+	width: 620px;
+	margin: 20px auto 40px;
+	h3{
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+}
+
+.slider-gallery-block{
+	height: 580px;
+}
+.photo{
+	position: relative;
+}
+.prjct-discription{
+	position: absolute;
+	bottom: 20px;
+	left: 50px;
+	padding: 10px;
+	background-color: #1d252b;
+	color:#fff;
+}
+
+.quote-block{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-image: url(../images/quote-rhombus.png);
+	background-size: contain;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.quote-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../images/quotes.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 130px;
+	height: 96px;
+	opacity: .2;
+}
+.quote-text{
+	display: block;
+	width: 620px;
+	margin: 20px auto 30px;
+	padding-top: 70px;
+	font-size: 25px;
+	color: #425466;
+	font-style: italic;
+}
+.autor-name{
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.quote-autor{
+	margin-left: 160px;
+}
+
+.quote-autor-photo{
+	display: inline-block;
+}
+.quote-autor-discription{
+	display: inline-block;
+	margin-left: 30px;
+	vertical-align: top;
+    margin-top: 15px;
+}
+.slider-h{
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #8fa5b3;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+}
+
+.slider-text{
+	color: #1b78d6;
+	font-size: 18px;
+	line-height: 21px;
+	word-wrap: break-word;
+}
+
+.projects-slider-footer{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-top: 150px;
+	margin-bottom: -35px;
+	border-top: 1px solid #8fa5b3;
+}
+
+.slider-content{
+	display: block;
+	width: 300px;
+	height: auto;
+	margin: 20px auto;
+}
+.left-prj-sdr{
+	width: 50%;
+	float: left;
+	border-right: 1px solid #8fa5b3;
+	cursor: pointer;
+}
+.right-prj-sdr{
+	width: 50%;
+	float: left;
+	margin-left: -1px;
+	cursor: pointer;
+}
+
+.right-prj-sdr:hover .slider-arrow-right{
+	transform: scale(1.2);
+}
+.left-prj-sdr:hover .slider-arrow-left{
+	transform: scale(1.2);
+}
+.slider-arrow-left{
+	background-image: url(../images/blue-arrow-left.png);
+	left: 20px;
+}
+
+.slider-arrow-right{
+	background-image: url(../images/blue-arrow-right.png);
+	right: 20px;
+}
+
+.slider-arrow-right,
+.slider-arrow-left{
+	position: absolute;
+	top:40px;
+	display: block;
+	width: 10px;
+	height: 30px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	transition: all .15s linear;
+}
+
+.image-block{
+	margin-bottom: 50px;
+}

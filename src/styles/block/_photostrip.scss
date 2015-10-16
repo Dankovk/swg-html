@@ -1,0 +1,98 @@
+
+.photo-strip {
+    margin: 20px 0;
+    position: relative;
+    min-height: 560px;
+    margin-bottom: 64px;
+}
+.photo-strip .photo {
+    box-shadow: inset 0 0 0 1px #ebebeb;
+    box-sizing: border-box;
+    max-height: 440px;
+    overflow: hidden;
+}
+.photo-strip .photo > img {
+    position: relative;
+    z-index: -1;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+.photo-strip .strip {
+    overflow: hidden;
+    position: absolute;
+    height: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.photo-strip .strip-inner {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.photo-strip .strip-item {
+    box-shadow: inset 0 0 0 1px #ebebeb;
+    transition: box-shadow 0.15s linear;
+    display: inline-block;
+    height: 100px;
+    width: 220px;
+    box-sizing: border-box;
+}
+.photo-strip .strip-item > img {
+    position: relative;
+    z-index: -1;
+    display: block;
+    max-width: 100%;
+}
+.photo-strip .strip-item + .strip-item {
+    margin-left: 16px;
+}
+.photo-strip .strip-item.active {
+    box-shadow: inset 0 0 0 1px #177ee6;
+}
+.photo-strip .prev,
+.photo-strip .next {
+    opacity: .5;
+    transition: opacity 0.15s linear;
+    display: block;
+    width: 140px;
+    height: 48px;
+    position: absolute;
+}
+.photo-strip .prev:hover, .photo-strip .prev:focus,
+.photo-strip .next:hover,
+.photo-strip .next:focus {
+    opacity: 1;
+}
+.photo-strip .prev > span,
+.photo-strip .next > span {
+    display: block;
+    margin: 20px auto;
+}
+.photo-strip .prev .arrow-left,
+.photo-strip .next .arrow-left {
+    background-image: url('../images/prjct-arrow-left.png');
+    background-position: 50% 50%;
+    width: 10px;
+    height: 30px;
+}
+.photo-strip .prev .arrow-right,
+.photo-strip .next .arrow-right {
+    background-image: url('../images/prjct-arrow-right.png');
+    background-position: 50% 50%;
+    width: 10px;
+    height: 30px;
+}
+.photo-strip .prev.hidden,
+.photo-strip .next.hidden {
+    display: none;
+}
+.photo-strip .prev {
+    bottom: 40px;
+    left:-100px;
+}
+.photo-strip .next {
+    bottom: 40px;
+    right: -100px;
+}

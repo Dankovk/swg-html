@@ -98,3 +98,34 @@
     font-weight: bold;
   }
 }
+.autor-name,.autor-position{
+  color: #1d252b;
+}
+#Client-carousel{
+  position: relative;
+  .item{
+
+
+    &.left{
+      opacity: .3;
+    }
+    &.right{
+      opacity: .3;
+    }
+  }
+  .quote-block{
+    height: 500px;
+  }
+  .carousel-control{
+    top: 66%;
+    width:24%;
+    opacity: 1;
+    text-shadow: none;
+    &.right{
+      background-image: none;
+    }
+    &.left{
+      background-image: none;
+    }
+  }
+}
