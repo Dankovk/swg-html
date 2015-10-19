@@ -17,15 +17,17 @@ $layout-header-fixed: false !default;
 }
 
 .layout-header{
+  min-width: 1240px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 9000111111;
+	z-index: 900011;
   transform: translateZ(0);
 	.contact-us{
 	  position: absolute;
 	  top: 8px;
 	  left: 22px;
+	  color: #fff;
 
 	}
 	.main-logo{
@@ -113,7 +115,7 @@ $layout-header-fixed: false !default;
 		  opacity: .5;
 		}
 		span{
-			color:$text-blue;
+			color:#fff;
 		}
 	}
 	.top-header-bg{
@@ -136,6 +138,9 @@ $layout-header-fixed: false !default;
 	.header-tel{
 	  top: 15px;
 	}
+  .logo-text{
+	display: none;
+  }
 
 	.top-header-bg{
 		position: absolute;

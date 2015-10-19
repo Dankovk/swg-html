@@ -2,8 +2,29 @@
 <html class="no-js">
 <head>
     <!-- partial:include('page/meta.partial.html') -->
+	<style>
+		.page-preloader {
+			position: fixed;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background: rgb(27,35,43);
+			z-index: 9999991005000;
+		}
+		.page-preloader .preloader-itself {
+			width: 128px;
+			height: 128px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			background: url('preloader.gif') no-repeat 50% 50%;
+			margin: -64px 0 0 -64px;
+		}
+	</style>
 </head>
 <body>
+<div class="page-preloader"><div class="preloader-itself"></div></div>
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -19,20 +40,20 @@
 			<li><a href="projecting.html">Проектирование</a></li>
 			<li><a href="manufacture.html">Изготовление</a></li>
 			<li><a href="assembly.html">Монтаж</a></li>
+			<li><a href="portfolio.html">Наши работы</a></li>
 		</ul>
 	</div>
 	<div class="header-tel">
 		<div class="contact-us"><span>Связаться с нами</span></div>
-		<svg version="1.1" id="button-normal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 width="154.128px" height="44.833px" viewBox="0 0 154.128 44.833" enable-background="new 0 0 154.128 44.833"
-			 xml:space="preserve">
-		<rect x="10.125" y="0.497" fill="none" stroke="#3379D9" stroke-width="0.9939" stroke-miterlimit="10" width="143.5" height="38.193"/>
-		<polyline fill="none" stroke="#3379D9" stroke-miterlimit="10" points="144.557,44.315 0.5,44.315 0.5,5.648 ">
-		</polyline>
-		<line fill="none" stroke="#3379D9" stroke-width="0.9566" stroke-miterlimit="10" x1="0.5" y1="44.258" x2="10.125" y2="38.69"/>
-		<line fill="none" stroke="#3379D9" stroke-width="0.9566" stroke-miterlimit="10" x1="0.243" y1="6.016" x2="9.868" y2="0.447"/>
-		<line fill="none" stroke="#3379D9" stroke-width="0.9566" stroke-miterlimit="10" x1="144.349" y1="44.42" x2="153.885" y2="38.815"/>
-		</svg></div>
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 width="154.128px" height="44.833px" viewBox="0 0 154.128 44.833" enable-background="new 0 0 154.128 44.833"
+								 xml:space="preserve">
+							<rect x="10.125" y="0.497" fill="none" stroke="#FFFFFF" stroke-width="0.9939" stroke-miterlimit="10" width="143.5" height="38.193"/>
+							<polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="144.557,44.315 0.5,44.315 0.5,5.648 "/>
+							<line fill="none" stroke="#FFFFFF" stroke-width="0.9566" stroke-miterlimit="10" x1="0.5" y1="44.258" x2="10.125" y2="38.69"/>
+							<line fill="none" stroke="#FFFFFF" stroke-width="0.9566" stroke-miterlimit="10" x1="0.243" y1="6.016" x2="9.868" y2="0.447"/>
+							<line fill="none" stroke="#FFFFFF" stroke-width="0.9566" stroke-miterlimit="10" x1="144.349" y1="44.42" x2="153.885" y2="38.815"/>
+							</svg></div>
 </div>
 
 <div class="layout-content">
@@ -49,7 +70,7 @@
 							<div class="layout-container">
 							<div class="head-content" data-0="opacity:1; transform:translateY(0%)" data-100p="opacity:0; transform:translateY(100%)">
 								<h1>STEEL WORK GROUP</h1>
-								<p>Пректируем, производим и монтируем металлоконструкции<br> для Украины и Эвропы более 10 лет</p>
+								<p>Проектируем, производим и монтируем металлоконструкции<br> для Украины и Европы более 10 лет</p>
 							</div>
 							</div>
 
@@ -86,7 +107,7 @@
 					<div class="item">
 						<div class="container">
 							<div class="layout-container">
-								<div class="head-content additional-margin-top"data-0="opacity:1; transform:translateY(0%)" data-100p="opacity:0; transform:translateY(100%)">
+								<div class="head-content additional-margin-top" data-0="opacity:1; transform:translateY(0%)" data-100p="opacity:0; transform:translateY(100%)">
 									<h1>ГАРАНТИИ КАЧЕСТВА</h1>
 									<div class="head-table">
 										<div class="head-table-cell">
@@ -122,7 +143,7 @@
 					<div class="item">
 						<div class="container">
 							<div class="layout-container">
-								<div class="head-content additional-margin-top-more"data-0="opacity:1; transform:translateY(0%)" data-100p="opacity:0; transform:translateY(100%)">
+								<div class="head-content additional-margin-top-more" data-0="opacity:1; transform:translateY(0%)" data-100p="opacity:0; transform:translateY(100%)">
 									<h1>Собственные <br> ноу-хау</h1>
 									<div class="head-table">
 										<div class="head-table-cell"><span>Дорожные знаки и щиты с повышенной защитой от коррозии</span></div>
@@ -131,8 +152,8 @@
 
 									</div>
 									<div class="head-table">
-										<div class="head-table-cell"><span>Шумозащитные экраны с высоким акустическим свойством</span></div>
-										<div class="head-table-cell"><span>Дорожные знаки и щиты с повышенной защитой от коррозии</span></div>
+										<div class="head-table-cell"><span>Шумозащитные экраны <br>с высоким акустическим свойством</span></div>
+										<div class="head-table-cell"><span>Дорожные знаки и щиты<br> с повышенной защитой от коррозии</span></div>
 
 									</div>
 								</div>
@@ -142,11 +163,11 @@
 					</div>
 				</div>
 				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="prev-proj-head"></span>
 					<span class="sr-only">Previous</span>
 				</a>
 				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="next-proj-head"></span>
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
@@ -161,13 +182,14 @@
 			<!--<img class="bg-image-head" src="images/main_background.jpg" alt=""/>-->
 
         </section>
+		<div class="arrow-bottom-block">
 		<div class="arrow-bottom"><div class="arrow-down"></div></div>
-
+		</div>
         <section class="scope-block homepage-scope">
 
             <div class="layout-container">
                 <div class="scope-content homepage-content">
-                    <h1 class="padding-less">ПРОЕКТИРОВАНИЕ</h1>
+                    <h1 class="padding-less">ПРОЕКТИ-<br>РОВАНИЕ</h1>
                     <div class="text-block">
                         <span>
                             Проектирование металлоконструкций очень <br>
@@ -180,19 +202,20 @@
                             квалификацией достаточной для разработки <br>
                             металлоконструкций любой сложности.
                         </span>
-						<a class="button-cont" href="portfolio-item.html">
-							<div class="contact-us"><span style="color: #1b78d6;">Подробнее</span></div>
+						<div class="button-cont">
+							<div class="contact-us"><span class="link-span-blue">Подробнее</span></div>
 							<svg version="1.1" id="button-normal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 width="154.128px" height="44.833px" viewBox="0 0 154.128 44.833" enable-background="new 0 0 154.128 44.833"
-			 xml:space="preserve">
-		<rect x="10.125" y="0.497" fill="none" stroke="#3379D9" stroke-width="0.9939" stroke-miterlimit="10" width="143.5" height="38.193"/>
-		<polyline fill="none" stroke="#3379D9" stroke-miterlimit="10" points="144.557,44.315 0.5,44.315 0.5,5.648 ">
-		</polyline>
-		<line fill="none" stroke="#3379D9" stroke-width="0.9566" stroke-miterlimit="10" x1="0.5" y1="44.258" x2="10.125" y2="38.69"/>
-		<line fill="none" stroke="#3379D9" stroke-width="0.9566" stroke-miterlimit="10" x1="0.243" y1="6.016" x2="9.868" y2="0.447"/>
-		<line fill="none" stroke="#3379D9" stroke-width="0.9566" stroke-miterlimit="10" x1="144.349" y1="44.42" x2="153.885" y2="38.815"/>
-		</svg>
-						</a>
+								 width="154.128px" height="44.833px" viewBox="0 0 154.128 44.833" enable-background="new 0 0 154.128 44.833"
+								 xml:space="preserve">
+							<rect x="10.125" y="0.497" fill="none" stroke="#3379D9" stroke-width="0.9939" stroke-miterlimit="10" width="143.5" height="38.193"/>
+							<polyline fill="none" stroke="#3379D9" stroke-miterlimit="10" points="144.557,44.315 0.5,44.315 0.5,5.648 ">
+							</polyline>
+							<line fill="none" stroke="#3379D9" stroke-width="0.9566" stroke-miterlimit="10" x1="0.5" y1="44.258" x2="10.125" y2="38.69"/>
+							<line fill="none" stroke="#3379D9" stroke-width="0.9566" stroke-miterlimit="10" x1="0.243" y1="6.016" x2="9.868" y2="0.447"/>
+							<line fill="none" stroke="#3379D9" stroke-width="0.9566" stroke-miterlimit="10" x1="144.349" y1="44.42" x2="153.885" y2="38.815"/>
+							</svg>
+							</a>
+						</div>
                     </div>
                 <div class="svg-cont">
                     <svg version="1.1" id="projecting" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -336,7 +359,7 @@
         <section>
             <div class="manufacturing-section">
                 <div class="layout-container">
-                    <h1>ИЗГОТОВЛЕНИЕ</h1>
+                    <h1>ИЗГОТОВ-<br>ЛЕНИЕ</h1>
                     <div class="text-block">
                         <span>
                             Основным видом деятельности нашей компании<br>
@@ -759,11 +782,11 @@
 
 			</div>
             <div class="layout-container">
-                <h1>Наши работы</h1>
+                <h1>проекты</h1>
                 <p>За 10 лет существования нашей проектной группы <br>
                     мы реализовали более 70 работ по проектированию <br>
                     металлических и железобетонных конструкций</p>
-				<a class="button-cont" href="porfolio.html">
+				<a class="button-cont" href="portfolio-item.html">
 					<div class="contact-us"><span>Подробнее</span></div>
 					<svg version="1.1" id="button-normal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="154.128px" height="44.833px" viewBox="0 0 154.128 44.833" enable-background="new 0 0 154.128 44.833"

@@ -2,8 +2,29 @@
 <html class="no-js">
 <head>
     <!-- partial:include('page/meta.partial.html') -->
+	<style>
+		.page-preloader {
+			position: fixed;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background: rgb(27,35,43);
+			z-index: 9999991005000;
+		}
+		.page-preloader .preloader-itself {
+			width: 128px;
+			height: 128px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			background: url('preloader.gif') no-repeat 50% 50%;
+			margin: -64px 0 0 -64px;
+		}
+	</style>
 </head>
 <body>
+<div class="page-preloader"><div class="preloader-itself"></div></div>
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -22,16 +43,15 @@
 		</ul>
 	</div>
 	<div class="header-tel"><div class="contact-us"><span>Связаться с нами</span></div>
-		<svg version="1.1" id="button-normal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 width="154.128px" height="44.833px" viewBox="0 0 154.128 44.833" enable-background="new 0 0 154.128 44.833"
-			 xml:space="preserve">
-		<rect x="10.125" y="0.497" fill="none" stroke="#3379D9" stroke-width="0.9939" stroke-miterlimit="10" width="143.5" height="38.193"/>
-		<polyline fill="none" stroke="#3379D9" stroke-miterlimit="10" points="144.557,44.315 0.5,44.315 0.5,5.648 ">
-		</polyline>
-		<line fill="none" stroke="#3379D9" stroke-width="0.9566" stroke-miterlimit="10" x1="0.5" y1="44.258" x2="10.125" y2="38.69"/>
-		<line fill="none" stroke="#3379D9" stroke-width="0.9566" stroke-miterlimit="10" x1="0.243" y1="6.016" x2="9.868" y2="0.447"/>
-		<line fill="none" stroke="#3379D9" stroke-width="0.9566" stroke-miterlimit="10" x1="144.349" y1="44.42" x2="153.885" y2="38.815"/>
-		</svg></div></div>
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 width="154.128px" height="44.833px" viewBox="0 0 154.128 44.833" enable-background="new 0 0 154.128 44.833"
+								 xml:space="preserve">
+							<rect x="10.125" y="0.497" fill="none" stroke="#FFFFFF" stroke-width="0.9939" stroke-miterlimit="10" width="143.5" height="38.193"/>
+							<polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="144.557,44.315 0.5,44.315 0.5,5.648 "/>
+							<line fill="none" stroke="#FFFFFF" stroke-width="0.9566" stroke-miterlimit="10" x1="0.5" y1="44.258" x2="10.125" y2="38.69"/>
+							<line fill="none" stroke="#FFFFFF" stroke-width="0.9566" stroke-miterlimit="10" x1="0.243" y1="6.016" x2="9.868" y2="0.447"/>
+							<line fill="none" stroke="#FFFFFF" stroke-width="0.9566" stroke-miterlimit="10" x1="144.349" y1="44.42" x2="153.885" y2="38.815"/>
+							</svg></div></div>
 </div>
 
 <div class="layout-content">
