@@ -10,8 +10,8 @@
 		position: absolute;
 		height: auto;
 		width: 1000px;
-		top:0;
-		left: 0;
+	  	top: 135px;
+	  	left: 140px;
 		.rhomb-wrapper{
 			display: block;
 			position: absolute;
@@ -46,14 +46,14 @@
 				opacity: 0;
 				transition:opacity .25s linear;
 			}
-			&:hover{
-				&:after{
-					opacity: .5;
-				}
-				&:before{
-					opacity: 1;
-				}
-			}
+			//&:hover{
+			//	&:after{
+			//		opacity: .5;
+			//	}
+			//	&:before{
+			//		opacity: 1;
+			//	}
+			//}
 
 		} 
 		.rhomb-inner{
@@ -68,49 +68,49 @@
     		transform:  skew(-20deg, -20deg) rotate(-135deg);
 		}
 
-		.rhomb-wrapper:nth-of-type(1){
+		.rhomb-cont:nth-of-type(1){
 			top: 270px;
     		left: 153px;
 		}
-		.rhomb-wrapper:nth-of-type(2){			
+		.rhomb-cont:nth-of-type(2){
 			top: 135px;
     		left: 438px;
 		}
-		.rhomb-wrapper:nth-of-type(3){
+		.rhomb-cont:nth-of-type(3){
 			top: 406px;
     		left: 437px;
 		}
-		.rhomb-wrapper:nth-of-type(4){			
+		.rhomb-cont:nth-of-type(4){
 			top: 0px;
     		left: 720px;
 		}
-		.rhomb-wrapper:nth-of-type(5){			
+		.rhomb-cont:nth-of-type(5){
 			top: 270px;
     		left: 720px;
 		}
-		.rhomb-wrapper:nth-of-type(6){
+		.rhomb-cont:nth-of-type(6){
 			top: 543px;
     		left: 720px;
 		}
 
-		.rhomb-1{
-			background-image: url(../images/project-1.jpg);
-		}
-		.rhomb-2{
-			background-image: url(../images/project-2.jpg);
-		}
-		.rhomb-3{
-    		background-image: url(../images/project-3.jpg);
-		}
-		.rhomb-4{
-			background-image: url(../images/project-1.jpg);
-		}
-		.rhomb-5{
-			background-image: url(../images/project-2.jpg);
-		}
-		.rhomb-6{
-    		background-image: url(../images/project-3.jpg);
-		}
+		//.rhomb-1{
+		//	background-image: url(../images/project-1-man.jpg);
+		//}
+		//.rhomb-2{
+		//	background-image: url(../images/project-2-man.jpg);
+		//}
+		//.rhomb-3{
+    		//background-image: url(../images/project-3-man.jpg);
+		//}
+		//.rhomb-4{
+		//	background-image: url(../images/project-4-man.jpg);
+		//}
+		//.rhomb-5{
+		//	background-image: url(../images/project-5-man.jpg);
+		//}
+		//.rhomb-6{
+    		//background-image: url(../images/project-6-man.jpg);
+		//}
 	}
 
 	img[data-mask]{
@@ -155,18 +155,23 @@
 			top: 50px;
 		}
 		li {
-		  width: 283px;
-		  /* float: left; */
+		  width: 442px;
+		 float: none;
 		  display: inline-block;
 		  overflow: hidden;
 		  text-align: left;
 		  margin-right: 37px;
+		  margin-bottom: 40px;
+		  .svg-cont{
+			vertical-align: middle;
+			float: none;
+		  }
 		  &:first-of-type{
 			span{
 			  padding-left: 0;
 			}
 		  }
-			&:nth-child(2) {
+			&:nth-of-type(even) {
 
 			}
 			&:last-of-type {
@@ -177,15 +182,17 @@
 				float: left;
 			}
 			span {
-				margin-top: 30px;
-				display: block;
-				float: left;
+
+				display: inline-block;
+			  vertical-align: middle;
+				float: none;
 				clear: both;
+			  	width: 218px;
 				color: #0f2d41;
 				font-size: 20px;
 				font-weight: 800;
-			  text-align: left;
-			  padding-left: 10px;
+			 	 text-align: left;
+
 
 			}
 		}
@@ -315,7 +322,7 @@
 		  top: 0;
 		  left: -50%;
 		  width: 200%;
-		  background-color: #1d252b;
+		  background-color: rgb(213,234,254);
 			.equipment-section-bg-rotate{
 			  position: absolute;
 			  height: 318%;
@@ -396,4 +403,87 @@ image {
 .projecting-projects{
   padding-top: 150px;
   height: 1000px;
+}
+.manuf-gallery{
+  .rhomb-1{
+	background-image: url(../images/project-1-man.jpg);
+  }
+  .rhomb-2{
+	background-image: url(../images/project-2-man.jpg);
+  }
+  .rhomb-3{
+	background-image: url(../images/project-3-man.jpg);
+  }
+  .rhomb-4{
+	background-image: url(../images/project-4-man.jpg);
+  }
+  .rhomb-5{
+	background-image: url(../images/project-5-man.jpg);
+  }
+  .rhomb-6{
+	background-image: url(../images/project-6-man.jpg);
+  }
+}
+.rhomb-cont{
+  position: relative;
+}
+.index-gallery{
+  .rhomb-1{
+	background-image: url(../images/project-1-i.jpg);
+  }
+  .rhomb-2{
+	background-image: url(../images/project-2-i.jpg);
+  }
+  .rhomb-3{
+	background-image: url(../images/project-3-i.jpg);
+  }
+  .rhomb-4{
+	background-image: url(../images/project-4-i.jpg);
+  }
+  .rhomb-5{
+	background-image: url(../images/project-5-i.jpg);
+  }
+  .rhomb-6{
+	background-image: url(../images/project-6-i.jpg);
+  }
+}
+.assembly-gallery{
+  .rhomb-1{
+	background-image: url(../images/project-1-a.jpg);
+  }
+  .rhomb-2{
+	background-image: url(../images/project-2-a.jpg);
+  }
+  .rhomb-3{
+	background-image: url(../images/project-3-a.jpg);
+  }
+  .rhomb-4{
+	background-image: url(../images/project-4-a.jpg);
+  }
+  .rhomb-5{
+	background-image: url(../images/project-5-a.jpg);
+  }
+  .rhomb-6{
+	background-image: url(../images/project-6-a.jpg);
+  }
+}
+.projecting-gallery{
+  .rhomb-1{
+	background-image: url(../images/project-1-p.jpg);
+  }
+  .rhomb-2{
+	background-image: url(../images/project-2-p.jpg);
+  }
+  .rhomb-3{
+	background-image: url(../images/project-3-p.jpg);
+  }
+  .rhomb-4{
+	background-image: url(../images/project-4-p.jpg);
+  }
+  .rhomb-5{
+	background-image: url(../images/project-5-p.jpg);
+  }
+  .rhomb-6{
+	background-image: url(../images/project-6-p.jpg);
+  }
 }

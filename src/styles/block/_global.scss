@@ -103,8 +103,10 @@
 }
 #Client-carousel{
   position: relative;
-  .item{
+  top: -96px;
 
+  .item{
+    transition: transform .6s ease-in-out ,opacity .2s linear !important;
 
     &.left{
       opacity: .3;
@@ -113,6 +115,8 @@
       opacity: .3;
     }
   }
+
+
   .quote-block{
     height: 500px;
   }
@@ -238,23 +242,23 @@
 }
 .portfolio-content{
   padding-top: 100px !important;
-  .application{
-    position: absolute;
-    width: 100%;
-    bottom: -537px;
-    background-color: #fff;
-    .footer-footer{
-      min-width: 1240px;
-      background-color: #fff;
-      border-top:1px solid #e3e8ec;
-      span{
-        color:#1d252b;
-      }
-      .year{
-        color: #8fa5b3;
-      }
-    }
-  }
+  //.application{
+  //  position: absolute;
+  //  width: 100%;
+  //  bottom: -537px;
+  //  background-color: #fff;
+  //  .footer-footer{
+  //    min-width: 1240px;
+  //    background-color: #fff;
+  //    border-top:1px solid #e3e8ec;
+  //    span{
+  //      color:#1d252b;
+  //    }
+  //    .year{
+  //      color: #8fa5b3;
+  //    }
+  //  }
+  //}
 
 }
 .prev-proj-head{
@@ -278,4 +282,64 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-
+.secondary-line{
+  top:88% !important;
+}
+.white-cover{
+  width: 100%;
+  position: absolute;
+  /* z-index: 1111111111; */
+  background-color: #fff;
+  height: 1000px;
+  transform: rotateZ(26deg);
+  left: -55%;
+  bottom: 42%;
+}
+.application{
+  .button-cont{
+    width: 504px;
+    display: inline-block;
+    text-align: right;
+    .contact-us{
+      left: auto;
+      right: 37px;
+    }
+  }
+}
+.tel-span{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 14px;
+  margin-right: 11px;
+  font-size: 14px;
+}
+.arrow-down-cont{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2px;
+}
+.partners-block{
+  a{
+    display: inline-block;
+    vertical-align: middle;
+    .no-margin{
+      margin: 0;
+    }
+  }
+}
+.rhombus-block{
+  p{
+    display: inline-block;
+    width: 135px;
+  }
+}
+.padding-button{
+  padding-bottom: 85px;
+}
+.assembly-page{
+  .application{
+    .layout-container{
+      height: auto!important;
+    }
+  }
+}

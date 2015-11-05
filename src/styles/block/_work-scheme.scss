@@ -74,6 +74,9 @@
 	.rhombus-2{
 		top: 141px;
     	left: 190px;
+	  p{
+		margin-left: -7px;
+	  }
 	}
 	.rhombus-3{
 		top: 236px;
@@ -83,11 +86,37 @@
 		top: 334px;
     	left: 585px;
     	p{
-    		margin-left: -15px;
+
     	}
 	}
 	.rhombus-5{
 		top: 427px;
     	left: 775px
 	}
+}
+.projecting-work-scheme{
+  .rhombus-1{
+	top: 22px;
+	left: -55px;
+  }
+  .rhombus-2{
+	top: 99px;
+	left: 104px;
+  }
+  .rhombus-3{
+	top: 179px;
+	left: 267px;
+  }
+  .rhombus-4{
+	top: 258px;
+	left: 430px;
+  }
+  .rhombus-5{
+	top: 342px;
+	left: 601px;
+  }
+  .rhombus-6{
+	top: 439px;
+	left: 800px;
+  }
 }

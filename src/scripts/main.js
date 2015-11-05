@@ -152,7 +152,7 @@ $(document).ready(function() {
     //         'transform': 'translate3d('+0+","+ scrolled *.65+'px,'+0+')',
     //         'opacity': 1 - (scrolled*100/$(window).height())/100
     //     });
-         if(scrolled > 1 && scrolled < 1500 && !$('.layout-header').hasClass('header-portfolio')) {
+         if(scrolled > 1  && !$('.layout-header').hasClass('header-portfolio')&& scrolled < 1500) {
              $('.layout-header').addClass('black-head');
          }
          else if(scrolled<1) {
@@ -160,13 +160,18 @@ $(document).ready(function() {
          }
          else if(scrolled>1500){
              s.refresh();
-         }
+             $('.layout-header').addClass('black-head');
+
+     }
 
          requestAnimationFrame(update);
      }
     requestAnimationFrame(update);
 
+    $('body').on('scroll', function(){
+        s.refresh();
 
+    });
 
 
 
@@ -237,7 +242,7 @@ $(document).ready(function() {
       {
         boxClass:     'wow',      // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
-        offset:       0,          // distance to the element when triggering the animation (default is 0)
+        offset:       10,          // distance to the element when triggering the animation (default is 0)
         mobile:       true,       // trigger animations on mobile devices (default is true)
         live:         true,       // act on asynchronously loaded content (default is true)
         callback:     function(box) {

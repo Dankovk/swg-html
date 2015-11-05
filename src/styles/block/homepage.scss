@@ -5,11 +5,13 @@
   .svg-cont{
     position: absolute;
     right: -24px;
-    top: 176px;
+    top: 111px;
     width: 500px;
   }
   .text-block{
     text-align: left;
+    margin-top: 45px;
+    width: 360px;
   span{
     color: #000;
     text-align: left;
@@ -20,7 +22,8 @@
   }
 }
 .homepage-scope{
-  height: 1000px;
+  height: 650px;
+
 }
 .more-btn{
   display: block;
@@ -100,19 +103,25 @@ section{
 }
 .manufacturing-section{
   margin-top: -40px;
+  padding: 154px 0;
+  height: 900px;
+  background-color: #000;
+  .layout-container{
+    z-index: 11;
+  }
 h1{
-  position: absolute;
+  position: static;
   z-index: 100;
   top: -126px;
   left: -14px;
   text-align: left;
 }
 .text-block{
-  position: absolute;
+  /* position: absolute; */
   z-index: 100;
-  left: -9px;
-  top: 172px;
+  margin-top: 45px;
   text-align: left;
+  width: 375px;
 
 span{
 color: #fff;
@@ -124,9 +133,8 @@ color: #fff;
 
 .svg-cont {
   position: absolute;
-  z-index: 100;
-  right: 186px;
-  top: 23px;
+  right: 113px;
+  top: 80px;
   z-index: 1;
 }
 }
@@ -167,13 +175,13 @@ color: #fff;
   width: 200%;
   height: 1051px;
   left: -50%;
-  top: -148px;
-  -webkit-transform: rotateZ(-26deg);
-  transform: rotateZ(-26deg);
+  top: -1262px;
+  /* -webkit-transform: rotateZ(-26deg); */
+  /* transform: rotateZ(-26deg); */
 }
 .homepage-projects{
   height: 970px;
-  padding-top: 40px;
+  padding-top: 70px;
 }
 .send-btn{
   background-color: transparent;
@@ -209,6 +217,9 @@ color: #fff;
   padding-top: 18px;
   border-top: 1px solid #1d252b;
   background-color: #212c33;
+  .layout-container{
+    height: auto;
+  }
   .year,.development{
     color: #8fa5b3;
   }
@@ -349,6 +360,51 @@ color: #fff;
   .contact-us{
     .link-span-blue{
       color: #3d94e9;
+    }
+  }
+}
+.workers-bg-manuf{
+  background-image: url("../images/main_producting.jpg");
+  position: absolute;
+  height: 164%;
+  transform: translateY(200px);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  top: -84%;
+  opacity: .4;
+
+}
+section.montage-section{
+  height: 600px;
+  position: relative;
+  height: 770px;
+  padding: 80px 0;
+  background-color: #1b78d6;
+  background-image: url(../images/dot.png);
+  background-position: 50% 50%;
+  background-repeat: 10px;
+  .svg-cont{
+    position: static;
+    margin-top: 48px;
+    margin-left: -148px;
+  }
+  h1{
+    display: inline-block;
+    margin-top: 57px;
+    /* float: right; */
+    margin-left: 96px;
+  }
+  .text-block{
+    display: inline-block;
+    position: static;
+    font-size: 18px;
+    text-transform: none;
+    width: 375px;
+    margin-top: 25px;
+    margin-left: 106px;
+    span{
+      text-transform: none;
     }
   }
 }

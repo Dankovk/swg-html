@@ -1,6 +1,9 @@
 .application{
 
     background: #212c33;
+  .layout-container{
+    height: 670px;
+  }
   h1{
     font-size: 90px;
     display: block;
@@ -24,7 +27,7 @@ input[type="text"]{
 
   outline: none;
   border: 1px solid transparent;
- background: #192126;
+ background: #141a1f;
   height: 60px;
   width: 240px;
   padding: 25px;
@@ -69,6 +72,7 @@ input[type="text"].not-empty{
   width: 100%;
   input[type="text"] {
     width: 504px;
+    height: 78px;
   }
 }
 .form-block{
