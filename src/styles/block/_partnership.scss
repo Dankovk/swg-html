@@ -24,19 +24,26 @@
 }
 .on-map-p{
   display: block;
-  margin-top: 58px;
+  margin-top: 0;
   color: #000;
+  font-size: 18px;
 }
 .partners-block{
   margin-top: 420px;
   img{
-    margin-right: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    filter:grayscale(100%);
+    transition: all .3s linear;
+    &:hover{
+      filter:grayscale(0%);
+    }
   }
   p{
     display: block;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     color: #000;
-    font-size: 17px;
+    font-size: 18px;
   }
 
 }

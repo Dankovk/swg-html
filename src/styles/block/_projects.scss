@@ -341,7 +341,7 @@
 
 	}
 	.projects-manufacture {
-		padding-top: 100px;
+	  	padding-top: 44px;
 		position: relative;
 		z-index: 100;
 		height: 740px;
@@ -349,7 +349,9 @@
 	}
 	.manufacture-work-scheme {
 		p {
-			width: 125px;
+		  width: 202px;
+		  margin-left: -35px;
+
 		}
 		.rhombus-2 {
 			top: 234px;
@@ -401,12 +403,13 @@ image {
   }
 }
 .projecting-projects{
-  padding-top: 150px;
+  padding-top: 220px;
   height: 1000px;
 }
 .manuf-gallery{
   .rhomb-1{
 	background-image: url(../images/project-1-man.jpg);
+
   }
   .rhomb-2{
 	background-image: url(../images/project-2-man.jpg);
@@ -422,6 +425,26 @@ image {
   }
   .rhomb-6{
 	background-image: url(../images/project-6-man.jpg);
+  }
+  &.easter-bg{
+	.rhomb-1{
+	  background-image: url(../images/de-niro.jpg);
+	}
+	.rhomb-2{
+	  background-image: url(../images/de-niro.jpg);
+	}
+	.rhomb-3{
+	  background-image: url(../images/de-niro.jpg);
+	}
+	.rhomb-4{
+	  background-image: url(../images/de-niro.jpg);
+	}
+	.rhomb-5{
+	  background-image: url(../images/de-niro.jpg);
+	}
+	.rhomb-6{
+	  background-image: url(../images/de-niro.jpg);
+	}
   }
 }
 .rhomb-cont{
@@ -487,3 +510,22 @@ image {
 	background-image: url(../images/project-6-p.jpg);
   }
 }
+//.rhomb-1{
+//  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+//}
+//.rhomb-2{
+//  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+//}
+//.rhomb-3{
+//  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+//}
+//.rhomb-4{
+//  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+//}
+//.rhomb-5{
+//  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+//}
+.rhomb-wrapper{
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+

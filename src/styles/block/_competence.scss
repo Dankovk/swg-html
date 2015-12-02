@@ -1,16 +1,15 @@
 
 .competence{
 	position: relative;
-	padding-top: 150px;
+	padding-top: 105px;
 	.competence-bg{
 		position: absolute;
 		overflow: hidden;
 		top:0;
 		left: -50%;
 		width: 200%;
-		height: 900px;
+	  	height: 830px;
 		background-color: $blue-bg;
-		transform: rotate(-26deg);
 		.dotted-bg{
 		  width: 200%;
 		  height: 500%;
@@ -25,7 +24,7 @@
 		}
 	}
   .competence-container{
-	padding-top: 300px;
+
   }
 	.competence-table-block{
 	  .svg-table{

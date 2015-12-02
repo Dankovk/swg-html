@@ -151,6 +151,11 @@
     color: #1b78d6;
 
   }
+  .layout-container{
+    p{
+      font-size: 18px;
+    }
+  }
 }
 .button-cont{
   position: relative;
@@ -230,7 +235,9 @@
     color: #1d252b!important;
   }
   .nav-bar{
-
+  ul{
+    padding-left: 0;
+  }
     li{
       a{
         color: #1b78d6 !important;
@@ -309,9 +316,11 @@
 .tel-span{
   display: inline-block;
   vertical-align: top;
-  margin-top: 14px;
+  margin-top: 16px;
   margin-right: 11px;
   font-size: 14px;
+  color: #98a5b2 !important;
+  transition: color .3s linear;
 }
 .arrow-down-cont{
   display: inline-block;
@@ -343,3 +352,41 @@
     }
   }
 }
+input[type="file"]{
+  display: block;
+  position: absolute;
+  opacity: 0;
+  width: 504px;
+  height: 65px;
+}
+.file-label{
+  position: static;
+  display: block;
+  width: 504px;
+  height: 65px;
+  border: 1px dashed;
+  text-align: left;
+  padding-top: 18px;
+  border-radius: 4px;
+  padding-left: 26px;
+  transition: all .3s linear;
+  &.filed{
+    border-color: green;
+  }
+}
+.carousel-control{
+  width: 50%;
+}
+.head-content{
+  .header-less-size-top{
+    font-size: 79px;
+  }
+}
+.partners-block .row {
+
+}
+.partners-block .col-3{
+  height: 100%;
+  line-height: 131px;
+}
+

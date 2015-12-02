@@ -29,10 +29,8 @@
     top: 0;
     left: -50%;
     width: 200%;
-    height: 700px;
+    height: 630px;
     background-color: #212c33;
-    -webkit-transform: rotate(-26deg);
-    transform: rotate(-26deg);
     z-index: -100;
 
     .waved-bg{
@@ -52,7 +50,7 @@
 }
 .background-lock{
   position: absolute;
-  right: 100px;
-  top: 0;
+  right: -34px;
+  top: 214px;
   z-index: -1;
 }
