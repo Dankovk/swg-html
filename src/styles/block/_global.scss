@@ -316,16 +316,16 @@
 .tel-span{
   display: inline-block;
   vertical-align: top;
-  margin-top: 16px;
+  margin-top: 14px;
   margin-right: 11px;
-  font-size: 14px;
+  font-size: 16px;
   color: #98a5b2 !important;
   transition: color .3s linear;
 }
 .arrow-down-cont{
   display: inline-block;
   vertical-align: middle;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 .partners-block{
   a{
@@ -355,23 +355,66 @@
 input[type="file"]{
   display: block;
   position: absolute;
+  cursor: pointer;
   opacity: 0;
+  z-index: 11;
   width: 504px;
   height: 65px;
 }
+.file-input-cont{
+  cursor: pointer;
+  &:hover{
+   .file-label{
+     svg{
+       polyline,line{
+         stroke: #3E95E9 !important;
+       }
+
+     }
+   }
+
+  }
+}
 .file-label{
-  position: static;
+  position: relative;
   display: block;
+  left: 0;
   width: 504px;
   height: 65px;
   border: 1px dashed;
   text-align: left;
   padding-top: 18px;
   border-radius: 4px;
-  padding-left: 26px;
-  transition: all .3s linear;
+  padding-left: 98px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  span{
+    font-size: 12px;
+  }
+  svg{
+    polyline,line{
+      stroke: #4a5a66 !important;
+      transition: all .3s linear;
+    }
+
+  }
   &.filed{
-    border-color: green;
+    border-color:#3E95E9;
+    color: #3E95E9;
+    svg{
+      polyline,line{
+        stroke: #3E95E9 !important;
+      }
+
+    }
+  }
+  &:hover{
+
+  }
+  .text-container{
+    position: absolute;
+    top: 7px;
+    line-height: 13px;
   }
 }
 .carousel-control{
@@ -389,4 +432,33 @@ input[type="file"]{
   height: 100%;
   line-height: 131px;
 }
-
+.button-cont{
+  background-color: transparent!important;
+  border: none;
+  outline: none;
+}
+.img-cont{
+    overflow: hidden;
+    img{
+        transition: all 1s linear;
+    }
+    &:hover{
+        img{
+            transform: scale(1.3);
+        }
+    }
+}
+.application{
+  .success-h1{
+    display: inline-block;
+  }
+  .img-success{
+    float: right;
+    position: absolute;
+    right: 2px;
+    top: 221px;
+  }
+  .succes-h4{
+    float: left;
+  }
+}

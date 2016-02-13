@@ -15,7 +15,9 @@
   }
 }
 .projects-manufacture{
-  padding-top: 480px;
+  padding-top: 0;
+  height: 1000px;
+  margin-top: 92px;
 }
 .scope-content {
 
@@ -53,6 +55,11 @@
   text-align: center;
   .equipment-header{
     text-align: left;
+    span{
+      display: block;
+      text-align: center;
+      margin: 28px;
+    }
   }
 }
 .equipment-bg{
@@ -82,10 +89,11 @@
 
 .equipment-item {
   display: inline-block;
-  width: 30%;
   margin-top: 0;
+  width: 260px;
+  vertical-align: top;
   .text-block{
-    text-align: center;
+    text-align:left;
     span {
 
       color: #000;
@@ -112,15 +120,15 @@
   }
   .background-lock {
     position: absolute;
-    right: 0;
+    right: -85px;
     top: 446px;
     z-index: -1;
   }
   .manufacture-guarantees-bg{
-    transform: rotateZ(26deg);
+    transform: rotateZ(0deg);
     height: 900px;
     .manufacture-guarantees-waved-bg{
-      transform: rotateZ(-26deg);
+      transform: rotateZ(0deg);
       width: 239%;
       height: 2000%;
 
@@ -159,7 +167,9 @@
 }
 .corrosion{
   position: relative;
-  height: 1000px;
+  height: 960px;
+  background-image: url("../images/background-anti-corosia.jpg");
+  background-size: cover;
 }
 .corrosion-bg{
   position: absolute;
@@ -225,7 +235,7 @@ ul{
 .corrosion-h1{
   color: #fff;
   text-align: left;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .small-rhombus-wrap{
 
@@ -279,11 +289,12 @@ ul{
   }
 }
 .corrosion{
+  padding-top: 20px;
   .text-block{
     display: block;
 
     .text-itself{
-      width: 310px;
+      width: 327px;
       display: inline-block;
       text-align: left;
       color: #fff;
@@ -319,7 +330,7 @@ ul{
   }
 }
 .manuf-scope-block{
-  height: 980px;
+  height: 873px;
 }
 .manufacture-head-bg{
   position: absolute;
@@ -344,5 +355,8 @@ ul{
   margin-top: -73px !important;
   }
 
+}
+.equipment .row {
+  margin-top: 40px;
 }
 

@@ -11,7 +11,19 @@ $(window).on('load', function () {
 
 
 
-
+if($('form div').hasClass('wpcf7-mail-sent-ok')){
+    $('.form-container').remove();
+    $('.application').prepend(' <div class="layout-container"> <h1 class ="success-h1">Ваша заявка отправлена!</h1> <h4 class ="succes-h4">Мы обязательно рассмотрим вашу <br> заявку в ближайшее время.</h4> <div class ="img-success"> <img src="http://swg.popel-studio.com/wp-content/themes/swg/images/form-success.png" alt=""/> </div> </div>');
+    $('html body').animate({
+        scrollTop:10000
+    },1);
+}
+//$(document).on('ready',function(){
+//    alert('loaded');
+//    $('.form-container').remove();
+//    $('.application').prepend(' <div class="layout-container"> <h1 class ="success-h1">Ваша заявка отправлена!</h1> <h4 class ="succes-h4">Мы обязательно рассмотрим вашу <br> заявку в ближайшее время.</h4> <div class ="img-success"> <img src="images/form-success.png" alt=""/> </div> </div>');
+//
+//});
 
 
 
@@ -188,6 +200,7 @@ $(document).ready(function() {
         var filename = $(".file-input").val();
         filename = filename.replace(/^.*[\\\/]/, '');
         $('.file-label').html(filename);
+        $('.svg-container-filled').addClass('visible');
 
 
     });
@@ -305,22 +318,20 @@ $(document).ready(function() {
             $(this).removeClass('not-empty');
         }
     });
-var s = skrollr.init({
-    forceHeight: false,
-    smootScrollig:true,
-    smoothScrollingDuration:200,
-    mobileCheck: function() {
-        return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
-    }
+    if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        var s = skrollr.init({
+        forceHeight: false,
+        smootScrollig:true,
+        smoothScrollingDuration:200,
 });
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    s.destroy();
-}
+    }
+
+
 $(".js-scroll").click(function(event) {
     event.preventDefault();
     var link = $(this).attr('href');
     $('html, body').animate({
-        scrollTop: $(link).offset().top - 100
+        scrollTop: $(link).offset().top - 170
     }, 1000);
 });
 
@@ -334,12 +345,24 @@ $(".js-scroll").click(function(event) {
 //
 //    return false;
 //});
-
-
-
-
+$(document).on('focus', '.form-control', function(){
+    var $this = $(this);
+    $this.closest('.form-group').find('label').addClass('focused');
+});
+$(document).on('blur', '.form-control', function(){
+    if(!$(this).val().length==0){
+        return
+    }
+    var $this = $(this);
+    $this.closest('.form-group').find('label').removeClass('focused');
+});
 $(document).on('click','.arrow-bottom', function(){
-    $('body').animate({scrollTop:$('.scope-content').offset().top-80});
+    $('body').animate({scrollTop:$('.scope-content').offset().top-120});
+});
+$('.arrow-down-link').on('click',function(){
+    $('body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000);
 });
 $(document).on('slide.bs.carousel','.carousel-top',function(event) {
     var $this   = $(this),
@@ -385,17 +408,17 @@ $(document).on('slide.bs.carousel','.carousel-top',function(event) {
 
     $('.slide-background.active').css({
         opacity:1
-
     });
 
-    $('.item.active .layout-container .head-content')
     $('.slide-background.active').attr({
         'data-0':"opacity:1; transform:translateY(0%)",
         'data-100p':"opacity:0;transform:translateY(60%)"
     });
 
+    if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+         s.refresh($('.slide-background'));
+    }
 
-    s.refresh($('.slide-background'));
 
 
 });
@@ -428,7 +451,7 @@ $('.scroll-spy').affix({
     offset: {
         top: $('.head-block').height(),
         bottom: function () {
-            return (this.bottom = $('.footer').outerHeight(true))
+            return (this.bottom = $('.footer').outerHeight(true));
         }
     }
-})
+});

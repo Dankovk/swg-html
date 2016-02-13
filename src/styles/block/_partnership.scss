@@ -1,5 +1,5 @@
 .partnership{
-  height: 1550px;
+  height: 1076px;
   position: relative;
   text-align: center;
   padding-top: 100px;
@@ -28,8 +28,19 @@
   color: #000;
   font-size: 18px;
 }
+.partners{
+  margin-top: -50px;
+  padding-bottom: 90px;
+}
 .partners-block{
-  margin-top: 420px;
+  margin-top: 20px;
+  h1{
+    font-size: 80px;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 95px;
+  }
   img{
     display: inline-block;
     vertical-align: middle;

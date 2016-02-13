@@ -1,5 +1,13 @@
 .application{
-
+  .svg-container{
+    position: absolute;
+    display: block;
+    width: 60px;
+    margin-top: -2px;
+    left: 23px;
+    top: 19px;
+    float: left;
+  }
     background: #212c33;
   .layout-container{
     height: 640px;
@@ -46,11 +54,14 @@ input[type="text"]{
 
   }
 }
-.form-control:focus~label{
-  top:-18px;
-  background: #212c33;
-  padding: 5px;
-  color: #acb8bf;
+label{
+  &.focused{
+    top:-18px;
+    background: #212c33;
+    padding: 5px;
+    color: #acb8bf;
+  }
+
 }
 input[type="text"].not-empty{
   outline: none;
@@ -125,4 +136,33 @@ input[type="text"].not-empty{
 }
 .dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark{
   display: none;
+}
+
+
+.application .button-cont .contact-us{
+  color: #fff;
+}
+.application .button-cont{
+  opacity: .5;
+}
+.application .button-cont:hover{
+  opacity: 1;
+}
+.affix-top{
+ visibility: hidden;
+}
+.svg-container-filled{
+  position: absolute;
+  z-index: -1;
+  display: block;
+  width: 58px;
+  top: 446px;
+  left: 25px;
+  opacity: 0;
+  transition: all .3s linear;
+  &.visible{
+    display: block;
+    opacity: 1;
+    z-index: 1;
+  }
 }

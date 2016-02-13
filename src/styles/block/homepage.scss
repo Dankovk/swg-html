@@ -349,7 +349,7 @@ color: #fff;
   .head-table{
     .head-table-cell{
       padding: 30px;
-
+      text-align: center;
       display: table-cell;
       height: 100px;
 
@@ -444,9 +444,10 @@ body{
     display: block;
     width: 10px;
     height: 10px;
-    border-radius: 50%;
+    border-radius: 0;
     background-color: transparent;
     border: 1px solid #3E95E9;
+    transform: rotate(135deg) skew(20deg, 20deg);
     &.active{
       background-color: #3E95E9;
     }
@@ -468,4 +469,8 @@ body{
 }
 .hidden{
   visibility: hidden;
+}
+.swg-logo{
+  display: inline-block;
+  margin-top: -2px;
 }
